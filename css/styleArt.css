@@ -6,29 +6,26 @@ body{
 }
 
 .desktop-topmenuWrap{
-    height: 235px;
+    width: 100%;
     
-    position: fixed;
-    left: 0;
-    top: 0;
-    /* 固定在左上 */
-    margin:0 auto; 
-    /* 框框可以用此法 內容用TA */
-    
-
+    position: fixed; 
     z-index: 1;
     display: flex;
+    justify-content: center;
 
 }
 
-.desktop-topmenuWrap .BLOGO{
-    width: 125px;
-    height: 126px;
-    margin-left: 75px;
+.BLOGO{ 
+    
     margin-top: 30px;
     padding-right: 50px;
     
 }   
+
+.BLOGO img{
+    width: 125px;
+    height: 126px;
+}
 
 .desktop-topmenuWrap ul{
     list-style: none;
@@ -72,19 +69,15 @@ body{
 
 
 
-
-
-
 .desktop-footerWrap{
-    height: 135px;
-    margin:0 auto; 
+    width: 100%;
     display: flex;
+    justify-content: center;
 
 }
 
 .infor{
     font-size: 20px;
-    margin-left: 150px;
     margin-top: 45px;
     color: black;
     width: 500px;
@@ -94,6 +87,10 @@ body{
 .infor a{
     text-decoration: none;
     color: black;
+}
+
+.infor .info-d{
+    font-size: 12px;
 }
 
 .copyright{
