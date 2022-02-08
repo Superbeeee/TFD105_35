@@ -251,6 +251,10 @@ input{
     color: black;
 }
 
+.infor .info-d{
+    font-size: 12px;
+}
+
 .copyright{
     margin-left: 290px;
 }
