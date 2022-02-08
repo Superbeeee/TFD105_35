@@ -6,6 +6,7 @@ body{
     background-color: #ECEAEA;
 }
 
+/* ---------Header---------- */
 .desktop-topmenuWrap{
     width: 100%;
 
@@ -177,7 +178,7 @@ body{
 
 
 
-
+/* ----------Footer---------- */
 .desktop-footerWrap{
     width: 100%;
     display: flex;
