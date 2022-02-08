@@ -2,7 +2,7 @@
 
 body{
     line-height:1.4;
-    font-family: '思源黑體';
+    font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
     background-color: #ECEAEA;
 }
 
@@ -22,13 +22,16 @@ body{
 }   
 
 .BLOGO img{
-    width: 125px;
-    height: 126px;
-}
+    width: 95px;
+} 
 
 .desktop-topmenuWrap ul{
     list-style: none;
     overflow: hidden;
+}
+
+.desktop-topmenuList .en{
+    font: 15px/1 "Bree Serif", serif;
 }
 
 .desktop-topmenuList li{
@@ -52,7 +55,7 @@ body{
 
 .top-linkList {
     display: inline-flex;
-    padding-top: 60px;
+    padding-top: 50px;
     margin-left: 10px;
 }
 

@@ -2,7 +2,7 @@
 
 body{
     line-height:1.4;
-    font-family: '思源黑體';
+    font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
     background-color: #ECEAEA;
 }
 
@@ -22,13 +22,16 @@ body{
 }   
 
 .BLOGO img{
-    width: 125px;
-    height: 126px;
+    width: 95px;
 } 
 
 .desktop-topmenuWrap ul{
     list-style: none;
     overflow: hidden;
+}
+
+.desktop-topmenuList .en{
+    font: 15px/1 "Bree Serif", serif;
 }
 
 .desktop-topmenuList li{
@@ -52,7 +55,7 @@ body{
 
 .top-linkList {
     display: inline-flex;
-    padding-top: 60px;
+    padding-top: 50px;
     margin-left: 10px;
 }
 
@@ -74,7 +77,7 @@ body{
 }
 
 .rowhead{
-    font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        
     font-size: 30px;
     letter-spacing: 3px;
     color: #000;
@@ -89,7 +92,6 @@ body{
 }
 
 .step-1-head{
-    font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
     font-size: 16px;
     letter-spacing: 3px;
     color: #404040;
@@ -122,6 +124,82 @@ body{
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
 }
+
+.step-1-cartList ul{
+    
+}
+
+.step-1-cartList li{
+    position: relative;
+    padding: 13px 5px;
+    display: flex;
+    justify-items: center;
+}
+
+.text-center{
+
+}
+
+.text-center img{
+    padding: 0 10px;
+    width: 138px;
+}
+
+.pName{
+    padding-top: 60px;
+}
+.pName .ch{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333;
+    
+    
+}
+
+.countWrap{
+    height: 15px;
+    font: 14px/1 "Bree Serif", serif;
+    
+    color: #333;
+    border: 1px solid #4d4d4d;
+    position: relative;
+    top: 50%;
+    transform: translateY(260%);
+    padding: 3px 0;
+    text-align: center;
+    width: 85px;
+    margin-left: 185px;
+   
+    
+}   
+
+
+.countWrap img{
+    width: 9px;
+}
+
+.text-center .price{
+    font: 17px/1 "Bree Serif", serif;
+    color: #666;
+    transform: translateY(43%);
+    text-align: center;
+    margin-left: 120px;
+    width: 60px;
+}
+
+.itemClose{
+    transform: translateY(43%);
+    margin-left: 80px;
+  
+}
+
+.itemClose img{
+    width: 18px;
+}
+
+
+
 
 .row-deliveryWrap{
     background-color: transparent;
@@ -168,7 +246,6 @@ body{
 }
 
 .billWrap .remark{
-    font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
