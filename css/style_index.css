@@ -112,22 +112,36 @@ body{
 
 
 .fp-tablecell2{
-    
-    background-image: url(../img/首頁2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 864px;
+    height: 100%;
+    text-align: center;
+    position: relative;
     
 }
 
-.fp-tablecell2 .en{
-    text-align: center;
-    padding-top: 525px;
+video{
+    display: block;
 }
 
-.fp-tablecell2 .m-btn{
-    text-align: center;
+.en2{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform:translate(-50%, -50%);
+    /* 置中後回去原本自己的寬度!! */
+}
+
+.m-btn2{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform:translate(-50%, -50%);
+    border: 3px solid #fff;
+    padding: 8px;
+    font-size: 26px;
 }
 
 .fp-tablecell3{
@@ -135,20 +149,39 @@ body{
     background-image: url(../img/首頁3.png);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
     width: 100%;
     height: 864px;
     
 }
 
-.fp-tablecell3 .en{
-    padding-top: 415px;
-    padding-left: 875px; 
+
+.en3{
+    color: white;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    /* 置中後回去原本自己的寬度!! */
+}
+
+.m-btn3{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 70%;
+    top: 58%;
+    transform:translate(-50%, -50%);
+    border: 3px solid #fff;
+    padding: 8px;
+    font-size: 26px;
 }
 
 
-.fp-tablecell3 .m-btn{
-    margin-left: 955px;
-}
+
+
+
+
 
 .fp-tablecell4{
     
@@ -171,7 +204,7 @@ body{
 
 
 
-/* ----------Footer---------- */
+/* ---------Footer---------- */
 .desktop-footerWrap{
     width: 100%;
     display: flex;

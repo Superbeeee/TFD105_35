@@ -269,6 +269,11 @@ body{
     border:1px solid #D9ADA0;
 }
 
+.btn-fast-buy a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .btn-add-cart{
     display: flex;
     flex-flow: row nowrap;
