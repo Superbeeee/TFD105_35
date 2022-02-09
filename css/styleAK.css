@@ -107,7 +107,7 @@ body{
     margin-bottom: 16px;
 
     color: #fff;
-    background-color: #A49379;
+    background-color: #D9ADA0;
     width: 25%;
     margin: 0 auto;
 }
@@ -201,14 +201,14 @@ input{
 }
 
 .black-item{
-    border: 1px solid #D9ADA0;
+    border: 1px solid #A49379;
     font-family: "微軟正黑體";
     font-size: 16px;
     width: 146px;
     height: 42px;
     margin: 0 auto; 
     position: relative;
-    background-color: #D9ADA0;
+    background-color: #A49379;
     
 }
 
