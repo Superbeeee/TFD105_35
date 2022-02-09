@@ -1,4 +1,5 @@
-@import url("reset.css");
+@import url("reset.css"); 
+/* reset放第一行 */
 
 body{
     line-height:1.4;
