@@ -34,6 +34,12 @@ body{
     font: 15px/1 "Bree Serif", serif;
 }
 
+.desktop-topmenuList ul{
+    list-style: none;
+    overflow: hidden;
+    
+}
+
 .desktop-topmenuList li{
     float: left;
     font-size: 24px;
@@ -46,11 +52,11 @@ body{
     color: black;
 }
 
-.desktop-topmenuList ul{
-    list-style: none;
-    overflow: hidden;
-    
+.desktop-topmenuList li a:hover{
+    color: #D9ADA0;
 }
+
+
 
 
 .top-linkList {

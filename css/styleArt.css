@@ -39,6 +39,11 @@ body{
     
 }
 
+.desktop-topmenuList ul{
+    list-style: none;
+    overflow: hidden;
+}
+
 .desktop-topmenuList li{
     float: left;
     font-size: 24px;
@@ -51,11 +56,12 @@ body{
     color: #fff;
 }
 
-.desktop-topmenuList ul{
-    list-style: none;
-    overflow: hidden;
-    
+.desktop-topmenuList li a:hover{
+    color: #A49379;
 }
+
+
+
 
 
 .top-linkList {

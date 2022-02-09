@@ -54,6 +54,10 @@ body{
     
 }
 
+.desktop-topmenuList li a:hover{
+    color: #D9ADA0;
+}
+
 
 .top-linkList {
     display: inline-flex;
@@ -107,6 +111,7 @@ body{
     padding: 8px;
     font-size: 26px;
 }
+
 
 .section a{
     text-decoration: none;
