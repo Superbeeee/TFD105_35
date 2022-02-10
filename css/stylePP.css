@@ -115,6 +115,10 @@ body{
     color: black;
 }
 
+.left-menu-section li a:hover{
+    color: #D9ADA0;
+}
+
 .left-menu-list li:first-child a{
     font-weight: bold;
 }
@@ -160,6 +164,16 @@ body{
     font-weight: 700;
     font-size: 1.2em;
     line-height: 1em;
+    display: flex;
+}
+
+.price-blk .del{
+    color: #999;
+}
+
+.price-blk .price{
+    margin-left: 10px;
+    color: #ea4c4c;
 }
 
 .product-desc-blk{
