@@ -6,6 +6,11 @@ body{
     background-color: #D9ADA0;
 }
 
+/* ------Header------ */
+
+.desktop-topmenuList li a:hover{
+    color: #A49379;
+}
 
 /* ------main-content------ */
 
