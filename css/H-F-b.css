@@ -54,7 +54,7 @@
 .top-linkList {
     display: inline-flex;
     padding-top: 50px;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 .top-linkList li{
@@ -92,12 +92,12 @@
 }
 
 .copyright{
-    margin-left: 37px;
+    margin-left: 156px;
 }
 
 .footer-linkList{
     display: inline-flex;
-    margin-left: 121px;
+    margin-left: 240px;
     margin-top: 40px;
     /* margin-top: 40px; */
 }
@@ -108,7 +108,6 @@
 
 .footer-linkList li img{
     width: 30px;
-    height: 30px;
 }
 
 .reference{
