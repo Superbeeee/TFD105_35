@@ -1,83 +1,11 @@
 @import url("reset.css"); 
+@import url("H-F-w.css");
 /* reset放第一行 */
 
 body{
     line-height:1.4;
     font-family:"STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
 }
-
-/* ---------Header---------- */
-.desktop-topmenuWrap{
-    width: 100%;
-    
-    position: fixed; 
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-
-}
-
-.BLOGO{ 
-    
-    margin-top: 30px;
-    padding-right: 50px;
-    
-}   
-
-.BLOGO img{
-    width: 95px;
-}
-
-.desktop-topmenuWrap ul{
-    list-style: none;
-    overflow: hidden;
-}
-
-.desktop-topmenuList .en{
-    font: 15px/1 "Bree Serif", serif;
-}
-
-.desktop-topmenuList li{
-    float: left;
-    font-size: 24px;
-    padding: 0 20px;
-    padding-top: 60px;
-}
-
-.desktop-topmenuList a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.desktop-topmenuList ul{
-    list-style: none;
-    overflow: hidden;
-    
-}
-
-.desktop-topmenuList li a:hover{
-    color: #D9ADA0;
-}
-
-
-.top-linkList {
-    display: inline-flex;
-    padding-top: 50px;
-    margin-left: 10px;
-}
-
-.top-linkList li{
-    padding-left: 20px;
-}
-
-.top-linkList li img{
-    width: 30px;
-    height: 30px;
-}
-
-
-
-
 
 .section{
     display: block;
@@ -111,6 +39,7 @@ body{
     border: 3px solid #fff;
     padding: 8px;
     font-size: 26px;
+    border-radius: 50% 20% / 10% 40%;
 }
 
 
@@ -148,11 +77,12 @@ video{
     color: white;
     position: absolute;
     left: 50%;
-    top: 67%;
+    top: 69%;
     transform:translate(-50%, -50%);
     border: 3px solid #fff;
     padding: 8px;
     font-size: 26px;
+    border-radius: 50% 20% / 10% 40%;
 }
 
 .fp-tablecell3{
@@ -182,11 +112,12 @@ video{
     color: white;
     position: absolute;
     left: 70%;
-    top: 58%;
+    top: 57%;
     transform:translate(-50%, -50%);
     border: 3px solid #fff;
     padding: 8px;
     font-size: 26px;
+    border-radius: 50% 20% / 10% 40%;
 }
 
 
@@ -217,47 +148,3 @@ video{
 
 
 
-/* ---------Footer---------- */
-.desktop-footerWrap{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.infor{
-    font-size: 20px;
-    margin-top: 45px;
-    color: black;
-    width: 500px;
-    
-}
-
-.infor a{
-    text-decoration: none;
-    color: black;
-}
-
-.infor .info-d{
-    font-size: 12px;
-}
-
-.copyright{
-    margin-left: 290px;
-}
-
-.footer-linkList{
-    display: inline-flex;
-    margin-left: 336px;
-    margin-top: 40px;
-    /* margin-top: 40px; */
-}
-
-.footer-linkList li{
-    padding-left: 20px;
-}
-
-.footer-linkList li img{
-    width: 30px;
-    height: 30px;
-}

@@ -1,74 +1,10 @@
 @import url("reset.css");
+@import url("H-F-b.css");
 
 body{
     line-height:1.4;
     font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
     background-color: #ECEAEA;
-}
-
-/* ---------Header---------- */
-.desktop-topmenuWrap{
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-}
-
-.BLOGO{ 
-    
-    margin-top: 30px;
-    padding-right: 50px;
-    
-}   
-
-.BLOGO img{
-    width: 95px;
-} 
-
-.desktop-topmenuWrap ul{
-    list-style: none;
-    overflow: hidden;
-}
-
-.desktop-topmenuList .en{
-    font: 15px/1 "Bree Serif", serif;
-}
-
-.desktop-topmenuList ul{
-    list-style: none;
-    overflow: hidden;
-}
-
-.desktop-topmenuList li{
-    float: left;
-    font-size: 24px;
-    padding: 0 20px;
-    padding-top: 60px;
-}
-
-.desktop-topmenuList a{
-    text-decoration: none;
-    color: black;
-}
-
-.desktop-topmenuList li a:hover{
-    color: #D9ADA0;
-}
-
-
-.top-linkList {
-    display: inline-flex;
-    padding-top: 50px;
-    margin-left: 10px;
-}
-
-.top-linkList li{
-    padding-left: 20px;
-}
-
-.top-linkList li img{
-    width: 30px;
-    height: 30px;
 }
 
 
@@ -113,6 +49,7 @@ body{
 .left-menu-section a{
     text-decoration: none;
     color: black;
+    display: block;
 }
 
 .left-menu-section li a:hover{
@@ -121,6 +58,10 @@ body{
 
 .left-menu-list li:first-child a{
     font-weight: bold;
+}
+
+.left-menu-list li:first-child a:hover{
+    color: black;
 }
 
 .main-content-blk{
@@ -371,49 +312,3 @@ body{
 
 
 
-
-
-/* ----------Footer---------- */
-.desktop-footerWrap{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #000;
-}
-
-.infor{
-    font-size: 20px;
-    margin-top: 45px;
-    color: black;
-    width: 500px;
-    
-}
-
-.infor a{
-    text-decoration: none;
-    color: black;
-}
-
-.infor .info-d{
-    font-size: 12px;
-}
-
-.copyright{
-    margin-left: 290px;
-}
-
-.footer-linkList{
-    display: inline-flex;
-    margin-left: 336px;
-    margin-top: 40px;
-    /* margin-top: 40px; */
-}
-
-.footer-linkList li{
-    padding-left: 20px;
-}
-
-.footer-linkList li img{
-    width: 30px;
-    height: 30px;
-}
