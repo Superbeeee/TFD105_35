@@ -55,16 +55,25 @@
 .top-linkList {
     display: inline-flex;
     padding-top: 50px;
-    margin-left: 100px;
+    padding-left: 100px;
+    width: 210px;
 }
 
 .top-linkList li{
-    padding-left: 20px;
+    padding: 0 10px;
 }
 
 .top-linkList li img{
     width: 30px;
     height: 30px;
+}
+
+.top-linkList a img{
+    transition: all 0.3s linear;
+}
+
+.top-linkList a:hover img{
+    transform: scale(1.5);
 }
 
 
@@ -96,6 +105,11 @@
     margin-left: 156px;
 }
 
+.rightside{
+    width: 450px;
+}
+
+
 .footer-linkList{
     display: inline-flex;
     margin-left: 240px;
@@ -110,6 +124,14 @@
 .footer-linkList li img{
     width: 30px;
     height: 30px;
+}
+
+.footer-linkList a img{
+    transition: all 0.3s linear;
+}
+
+.footer-linkList a:hover img{
+    transform: scale(1.5);
 }
 
 .reference{

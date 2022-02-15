@@ -5,6 +5,7 @@
     <title>Index page</title>
     <title>Document</title>
     <link href="./css/style_index.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
     <!--------- Header --------->
@@ -48,13 +49,17 @@
     </div>
 
     <!--------- Main-content --------->
-    <div class="section">
+    <div class="section" id="Main-content">
         <div class="fp-tablecell1" >
             <a href="PL.html">
-                <div class="en">BEANGO! Get a Taste!</div>
-                <div class="m-btn">
-                    <span class="white">線上購買</span>
+                <div class="articleWrap">
+                    <div class="en">BEANGO! Get a Taste!</div>
+                
+                    <div class="m-btn">
+                        <span class="white">線上購買</span>
                 </div>
+                </div>
+                
             </a>
         </div>
     
@@ -84,10 +89,13 @@
     
         <div class="fp-tablecell4">
             <a href="MP.html">
-                <div class="en">Where have you bean?</div>
-                <div class="m-btn">
-                    <span class="white">尋找豆間</span>
+                <div class="articleWrap">
+                    <div class="en">Where have you bean?</div>
+                    <div class="m-btn">
+                        <span class="white">尋找豆間</span>
+                    </div>
                 </div>
+                
             </a>
         </div>
     </div>
@@ -139,9 +147,14 @@
     </div>
     
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>
+        // 影片
         document.getElementById('vid').play();
+
+
+        //fullpage
+        
     </script>
 </body>
 </html>
