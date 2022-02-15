@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Restaurant Menu</title>
     <title>Document</title>
-    <link href="./css/styleRM.css" rel="stylesheet" type="text/css">
+    <link href="./css/styleRM-test.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <!--------- Header --------->
@@ -15,7 +15,7 @@
             </a>
             
         </div>
-        
+       
         <section class="desktop-topmenuList">
             <nav class="en">
               <a href="PL.html"><span data-hover="線上購買">shop online</span></a>
@@ -55,9 +55,12 @@
             <div class="me_wrap">
                 <div class="lang_switcher">
                     <h3>Meun Language</h3>
-                    <div class="zh">中文</div>
-                    <div class="jp">日本語</div>
-                    <div class="en">English</div>
+                    <input id="zh" type="radio" name="tab" checked="checked">
+                    <label for="zh">中文</label>
+                    <input id="jp" type="radio" name="tab">
+                    <label for="jp">日本語</label>
+                    <input id="en" type="radio" name="tab">
+                    <label for="en">English</label>
                 </div>
                 
                 <h2 class="getInAni">喫招牌</h2>

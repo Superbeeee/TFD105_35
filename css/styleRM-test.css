@@ -67,16 +67,22 @@ h3{
     line-height: 1.4;
 }
 
-.zh{
-    cursor: default;
-    background: #D9ADA0;
-    color: #fff;
-    padding: 0.5em 1em;
-    display: table-cell;
-    text-align: center;
+.lang_switcher input{
+    display: none;
 }
 
-.jp{
+.lang_switcher label{
+    
+
+    padding: 0.5em 1em;
+    display: table-cell;
+    background: #FFF;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+/* .jp{
     padding: 0.5em 1em;
     display: table-cell;
     background: #FFF;
@@ -92,9 +98,9 @@ h3{
     cursor: pointer;
     text-align: center;
     transition: all 0.5s;
-}
+} */
 
-.jp:hover{
+/* .jp:hover{
     color: #FFF;
     background-color: #C2BD91;
 }
@@ -102,7 +108,7 @@ h3{
 .lang_switcher .en:hover{
     color: #FFF;
     background-color: #C2BD91;
-}
+} */
 
 h2{
     font-weight: bold;
@@ -121,13 +127,33 @@ h2{
     
 }
 
+.lang_switcher input:checked + label{
+    opacity: 1; 
+    cursor: default;
+    background: #D9ADA0;
+    color: #fff;
+    padding: 0.5em 1em;
+    display: table-cell;
+    text-align: center;
+    
+}
 
+.lang_switcher label:hover{
+    color: #FFF;
+    background-color: #C2BD91;
+}
+
+.lang_switcher input:checked + .fomenu_row{
+    display: initial;
+}
 
 .fomenu_row{
     display: table-cell;
     vertical-align: top;
     width: 50%;
     padding-left: 40px;
+
+    order:1;
 
 }
 
@@ -165,6 +191,9 @@ h2{
     vertical-align: middle;
 }
 
+
+
+/* -----Jump----- */
 .backtop{
     margin: 130px auto;
     text-align: center;
