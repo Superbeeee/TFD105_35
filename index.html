@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Index page</title>
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <link href="./css/style_index.css" rel="stylesheet" type="text/css">
-
-</head>
+    
+ 
 <body>
-    <!--------- Header --------->
+    <!-- ------- Header ------- -->
     <div class="desktop-topmenuWrap">
         <div class="BLOGO">
             <a href="index.html">
@@ -20,7 +21,7 @@
         <section class="desktop-topmenuList">
             <nav class="en">
               <a href="PL.html"><span data-hover="線上購買">shop online</span></a>
-              <a href="Art.html"><span data-hover="線上探索">bean Art Present</span></a>
+              <a href="Art.html"><span data-hover="線上探索豆間">bean Art Present</span></a>
               <a href="RM.html"><span data-hover="豆間菜單">bean Menu</span></a>
               <a href="MP.html"><span data-hover="尋找豆間">where? bean</span></a>
             </nav>
@@ -43,59 +44,81 @@
     </div>
 
     <!--------- Main-content --------->
-    <div class="section" id="Main-content">
-        <div class="fp-tablecell1" >
-            <a href="PL.html">
-                <div class="articleWrap">
-                    <div class="en">BEANGO! Get a Taste!</div>
-                
-                    <div class="m-btn">
-                        <span class="white">線上購買</span>
-                </div>
-                </div>
-                
-            </a>
-        </div>
-    
-        <div class="fp-tablecell2">
-            <video id="vid" width="100%" autoplay muted>
-                <source src="./video/sbs-intro.mp4" type="video/mp4">
-              </video>
-            
+    <div id="fullpage" class="Main">
+        <div class="section">
+            <div class="fp-tablecell1">
+                <a href="PL.html">
+                    <img src="img/首頁1.png" alt="">
 
-            <a href="Art.html">
-                <div class="en2">What is needed is a Bean Bang!</div>
-                <div class="m-btn2">
-                    <span class="white">線上探索</span>
-                </div>
-            </a>
-        </div>
-    
-    
-        <div class="fp-tablecell3">
-            <a href="RM.html">
-                <div class="en3">How about  Plan Bean?</div>
-                <div class="m-btn3">
-                    <span class="white">豆間菜單</span>
-                </div>
-            </a>
-        </div>
-    
-        <div class="fp-tablecell4">
-            <a href="MP.html">
-                <div class="articleWrap">
-                    <div class="en">Where have you bean?</div>
-                    <div class="m-btn">
-                        <span class="white">尋找豆間</span>
+                    <div class="articleWrap">
+                        <div class="en">BEANGO! Get a Taste!</div>
+                    
+                        <div class="m-btn">
+                            <span class="white">線上購買</span>
+                        </div>
                     </div>
-                </div>
-                
-            </a>
+                    
+                </a>
+            </div>
         </div>
+
+        <dic class="section">
+            <div class="fp-tablecell2">
+                <video id="vid" width="100%" autoplay loop muted >
+                    <source src="./video/sbs-intro.mp4" type="video/mp4">
+                  </video>
+                
+    
+                <a href="Art.html">
+                    <div class="articleWrap">
+                        <div class="en2">What is needed is a Bean Bang!</div>
+                        <div class="m-btn2">
+                            <span class="white">線上探索</span>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
+        </dic>
+
+        <div class="section">
+            <div class="fp-tablecell3">
+                <a href="RM.html">
+                    <img src="img/首頁3.png" alt="">
+
+                    <div class="articleWrap-for3">
+                        <div class="en3">How about  Plan Bean?</div>
+                        <div class="m-btn3">
+                            <span class="white">豆間菜單</span>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="fp-tablecell4">
+                <a href="MP.html">
+                    <img src="img/首頁4.png" alt="">
+
+                    <div class="articleWrap">
+                        <div class="en">Where have you bean?</div>
+                        <div class="m-btn">
+                            <span class="white">尋找豆間</span>
+                        </div>
+                    </div>
+                    
+                </a>
+            </div>
+        </div>
+
+    
+        
     </div>
     
 
-    <!--------- Footer --------->
+    <!-- ------- Footer ------- -->
     <div class=desktop-footerWrap>
         <div class="infor"> 
             | 
@@ -128,7 +151,7 @@
             <div class="copyright">Copyright © bean All Rights Reserved​​</div>
         </div>
             
-    </div>
+    </div> 
    
     <div class="reference">
         <div class="reference-inner">
@@ -142,13 +165,23 @@
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script>
+    
+    
+
+    <script type="text/javascript">
         // 影片
         document.getElementById('vid').play();
-
-
+    
         //fullpage
-        
+        new fullpage('#fullpage', {
+            navigation: true,
+            responsiveWidth: 700,
+            anchors: ['SC', 'ART', 'RM', 'MP'],
+            parallax: true,
+            onLeave: function(origin, destination, direction){
+                console.log("Leaving section" + origin.index);
+            },
+        });
     </script>
 </body>
 </html>

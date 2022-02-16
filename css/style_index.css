@@ -10,27 +10,33 @@ body{
 
 .section{
     display: block;
-    font-size: 36px;
-    color: #fff;
-    min-width: 910px;
+    width: 100%;
     
 }
 .fp-tablecell1{
     
-    background-image: url(../img/首頁1.png);
+    /* background-image: url(../img/首頁1.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
     width: 100%;
-    height: 864px;
+    /* height: 864px; */
     position: relative;
 }
 
-.fp-tablecell1 .articleWrap{
+img{
+    width: 100%;
+    display: block;
+}
+
+
+.articleWrap{
     position: absolute;
-    top: 60%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%);
+    /* 置中後回去原本自己的寬度!!  */
+
     text-align: center;
     transition: all 1.2s 1s;
     width: 90%;
@@ -72,16 +78,13 @@ body{
 }
 
 
-.section a{
+.Main a{
     text-decoration: none;
-    color: #fff;
-    
 }
 
 
 .fp-tablecell2{
     width: 100%;
-    height: 100%;
     text-align: center;
     position: relative;
     
@@ -92,7 +95,7 @@ video{
 }
 
 .en2{
-    font: 30px/1 "Bree Serif", serif;
+    font: 36px/1 "Bree Serif", serif;
     letter-spacing: 3px;
     line-height: 1.2;
     color: #fff;
@@ -100,32 +103,47 @@ video{
     transition: all 0.5s;
 
 
-    position: absolute;
+    /* position: absolute;
+    top: 55%;
     left: 50%;
-    top: 60%;
-    transform:translate(-50%, -50%);
-    /* 置中後回去原本自己的寬度!! */
+    transform:translate(-50%);
+    置中後回去原本自己的寬度!! */
 
-    text-shadow: black 0.1em 0.1em 0.5em
+    text-shadow: black 0.1em 0.1em 0.5em;
 }
 
 .m-btn2{
-    position: absolute;
+    /* position: absolute;
+    top: 64%;
     left: 50%;
-    top: 69%;
-    transform:translate(-50%, -50%);
+
+    transform:translate(-50%); */
     
 }
 
 .fp-tablecell3{
     
-    background-image: url(../img/首頁3.png);
+    /* background-image: url(../img/首頁3.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     position: relative;
     width: 100%;
-    height: 864px;
+    /* height: 864px; */
     
+}
+
+.articleWrap-for3{
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    
+    transform:translate(-50%);
+    /* 置中後回去原本自己的寬度!!  */
+
+    text-align: center;
+    transition: all 1.2s 1s;
+    width: 90%;
+
 }
 
 
@@ -137,20 +155,22 @@ video{
     margin-bottom: 22px;
     transition: all 0.5s;
 
-    position: absolute;
-    left: 58%;
-    top: 50%;
-    transform:translate(-50%, -50%);
-    /* 置中後回去原本自己的寬度!! */
+    /* position: absolute;
+    top: 45%;
+    left: 68%;
+    
+    transform:translate(-50%); */
+    
 
     text-shadow: black 0.1em 0.1em 0.5em;
 }
 
 .m-btn3{
-    position: absolute;
-    left: 58%;
+    /* position: absolute;
     top: 57%;
-    transform:translate(-50%, -50%);
+    left: 73%;
+   
+    transform:translate(-50%); */
 }
 
 
@@ -161,24 +181,16 @@ video{
 
 .fp-tablecell4{
     
-    background-image: url(../img/首頁4.png);
+    /* background-image: url(../img/首頁4.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     width: 100%;
-    height: 864px;
+    /* height: 864px; */
     position: relative;
     
 }
 
-.fp-tablecell4 .articleWrap{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    transition: all 1.2s 1s;
-    width: 90%;
-}
+
 
 .fp-tablecell4 .en{
     font: 36px/1 "Bree Serif", serif;
