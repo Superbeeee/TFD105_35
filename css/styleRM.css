@@ -42,7 +42,7 @@ body{
 	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
 }
 
-.food-menu{
+.py-5{
     padding: 3em 0 5em;
 }
 
@@ -51,11 +51,14 @@ body{
     margin: 0 auto;
 }
 
-.lang_switcher{
+.btn-group{
     display: table;
     float: right;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    
+    
 }
 
 h3{ 
@@ -67,42 +70,58 @@ h3{
     line-height: 1.4;
 }
 
-.zh{
-    cursor: default;
-    background: #D9ADA0;
-    color: #fff;
-    padding: 0.5em 1em;
-    display: table-cell;
-    text-align: center;
+.btn-group button{
+    
 }
 
-.jp{
+button{
+    width: 76px;
+    height: 45px;
+    padding: 0.5em 1em;
+    display: inline-block;
+    background-color: #FFF; 
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    border: none;
+
+    font-family: inherit;
+    line-height: inherit;
+    /* 修復邊框 */
+    
+}
+
+.active{ 
+    background-color: #0074a9 !important; 
+    color: #FFF;
+}
+/* .jp{
     padding: 0.5em 1em;
     display: table-cell;
     background: #FFF;
     cursor: pointer;
     text-align: center;
     transition: all 0.5s;
-}
+} */
 
-.lang_switcher .en{
+/* .lang_switcher .en{
     padding: 0.5em 1em;
     display: table-cell;
     background: #FFF;
     cursor: pointer;
     text-align: center;
     transition: all 0.5s;
-}
+} */
 
-.jp:hover{
+button:hover{
     color: #FFF;
     background-color: #C2BD91;
 }
 
-.lang_switcher .en:hover{
+/* .lang_switcher .en:hover{
     color: #FFF;
     background-color: #C2BD91;
-}
+} */
 
 h2{
     font-weight: bold;
@@ -121,25 +140,66 @@ h2{
     
 }
 
+/* .btn-group input:checked + label{
+    opacity: 1; 
+    cursor: default;
+    background: #D9ADA0;
+    color: #fff;
+    padding: 0.5em 1em;
+    display: table-cell;
+    text-align: center;
+    
+}
 
+.btn-group label:hover{
+    color: #FFF;
+    background-color: #C2BD91;
+}
 
-.fomenu_row{
+.btn-group input:checked + .fomenu_row{
+    display: initial;
+} */
+
+.row{
     display: table-cell;
     vertical-align: top;
     width: 50%;
     padding-left: 40px;
 
-}
-
-.row-photo{
+    order:1;
 
 }
 
-.fomenu_wrap img{
+/* .flex-direction-nav a{
+    display: none;
+} */
+.flex-prev{
+    width: 30px !important;
+}
+
+.flex-next{
+    width: 30px !important;
+}
+
+/* #super{
+    width: 450px !important;
+    
+} */
+
+.flex-active-slide{
+    width: 402px !important;
+}
+
+/* .slides img{
+    width: 450px !important; ;
+
+} */
+
+/* .fomenu_wrap img{
     width: 450px;
     height: 334px;
 
-}
+} */
 
 .fomenu_lists{
     background: #F6F5F4;
@@ -165,6 +225,9 @@ h2{
     vertical-align: middle;
 }
 
+
+
+/* -----Jump----- */
 .backtop{
     margin: 130px auto;
     text-align: center;
