@@ -170,25 +170,30 @@ h2{
 
 }
 
+.flexslider {
+    width: 450px;
+}
+
+
 /* .flex-direction-nav a{
     display: none;
 } */
-.flex-prev{
+/* .flex-prev{
     width: 30px !important;
 }
 
 .flex-next{
     width: 30px !important;
-}
+} */
 
 /* #super{
     width: 450px !important;
     
 } */
 
-.flex-active-slide{
+/* .flex-active-slide{
     width: 402px !important;
-}
+} */
 
 /* .slides img{
     width: 450px !important; ;
