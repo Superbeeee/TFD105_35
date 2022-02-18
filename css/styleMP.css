@@ -8,10 +8,6 @@
         background-color: #ECEAEA;
     }
     
-    
-    
-    
-    
     .map{
         
     }
@@ -199,12 +195,12 @@
     }
     
     .map{
-        width: 100%;
-        padding-top: 170px;
+        
+        padding: 170px 20px 80px;
     }
     
     .map-area{
-    
+        width: 100%;
     }
 
     iframe{
