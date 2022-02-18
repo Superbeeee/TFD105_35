@@ -1,99 +1,289 @@
 @import url("reset.css");
 @import url("H-F-b.css");
 
-body{
-    line-height:1.4;
-    font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-    background-color: #ECEAEA;
-}
-
-
-
-
-
-.map{
-    
-}
-
-iframe{
-    width: 100%;
-}
-
-.map-info{
-    width: 100%;
-    margin-top: 70px;
-}
-
-.title{
-    width:150px;
-    background-color: #D9ADA0;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 28px;
-    font-family: "微軟正黑體";
-    text-align: center;
-    padding: 5px;
-    border-radius: 10% / 50%;
-
-}
-
-.detail-info{
-    display: flex;
-    margin: 200px auto;
-    height: 150px;
-    align-items: center;
-    
-}
-
-
-
-.info{
-    width:350px;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 18px;
-    font-family: "微軟正黑體";
-    text-align: center;
-    padding: 5px;
+@media (min-width: 1025px){
+    body{
+        line-height:1.4;
+        font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        background-color: #ECEAEA;
+    }
     
     
+    
+    
+    
+    .map{
+        
+    }
+    
+    iframe{
+        width: 100%;
+    }
+    
+    .map-info{
+        width: 100%;
+        margin-top: 70px;
+    }
+    
+    .title{
+        width:150px;
+        background-color: #D9ADA0;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 28px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+        border-radius: 10% / 50%;
+    
+    }
+    
+    .detail-info{
+        display: flex;
+        margin: 200px auto;
+        height: 150px;
+        align-items: center;
+        
+    }
+    
+    
+    
+    .info{
+        width:350px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+        
+        
+    }
+    
+    .info p{
+        transition: all .5s;
+        background-color: #A49379;
+        border-radius: 10px 100px / 120px;
+    }
+    
+    .info p:hover{
+        z-index: 1;
+    
+        transform: scale(1.2);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+    }
+    
+    .trans{
+        margin-left: 100px;
+        width:320px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .trans p{
+        transition: all .5s;
+        background-color: #A49379;
+        border-radius: 10px 100px / 120px;
+    }
+    
+    .trans p:hover{
+        z-index: 1;
+    
+        transform: scale(1.2);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+    }body{
+        line-height:1.4;
+        font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        background-color: #ECEAEA;
+    }
+    
+    
+    
+    
+    
+    .map{
+        
+    }
+    
+    iframe{
+        width: 100%;
+    }
+    
+    .map-info{
+        width: 100%;
+        margin-top: 70px;
+    }
+    
+    .title{
+        width:150px;
+        background-color: #D9ADA0;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 28px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+        border-radius: 10% / 50%;
+    
+    }
+    
+    .detail-info{
+        display: flex;
+        margin: 200px auto;
+        height: 150px;
+        align-items: center;
+        
+    }
+    
+    
+    
+    .info{
+        width:350px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+        
+        
+    }
+    
+    .info p{
+        transition: all .5s;
+        background-color: #A49379;
+        border-radius: 10px 100px / 120px;
+    }
+    
+    .info p:hover{
+        z-index: 1;
+    
+        transform: scale(1.2);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+    }
+    
+    .trans{
+        margin-left: 100px;
+        width:320px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .trans p{
+        transition: all .5s;
+        background-color: #A49379;
+        border-radius: 10px 100px / 120px;
+    }
+    
+    .trans p:hover{
+        z-index: 1;
+    
+        transform: scale(1.2);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+    }
 }
 
-.info p{
-    transition: all .5s;
-    background-color: #A49379;
-    border-radius: 10px 100px / 120px;
+@media (max-width: 1024px){
+    body{
+        line-height:1.4;
+        font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        background-color: #ECEAEA;
+    }
+    
+    .map{
+        width: 100%;
+        padding-top: 170px;
+    }
+    
+    .map-area{
+    
+    }
+
+    iframe{
+        width: 100%;
+    }
+    
+    .map-info{
+       
+        margin-top: 70px;
+    }
+    
+    .title{
+        width:100px;
+        background-color: #D9ADA0;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 20px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+        border-radius: 10% / 50%;
+    
+    }
+    
+    .detail-info{
+        margin: 100px auto;
+    }
+    
+    
+    
+    .info{
+        width:350px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 16px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+        
+        
+    }
+    
+    .info p{
+        transition: all .5s;
+        background-color: #A49379;
+        border-radius: 10px 100px / 120px;
+    }
+    
+    .info p:hover{
+        z-index: 1;
+    
+        transform: scale(1.2);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+    }
+    
+    .trans{
+        margin-left: 100px;
+        width:320px;
+        margin: 20px auto;
+        color: #fff;
+        font-size: 16px;
+        font-family: "微軟正黑體";
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .trans p{
+        transition: all .5s;
+        background-color: #A49379;
+        border-radius: 10px 100px / 120px;
+    }
+    
+    .trans p:hover{
+        z-index: 1;
+    
+        transform: scale(1.2);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+    }
 }
 
-.info p:hover{
-    z-index: 1;
-
-	transform: scale(1.2);
-	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
-}
-
-.trans{
-    margin-left: 100px;
-    width:320px;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 18px;
-    font-family: "微軟正黑體";
-    text-align: center;
-    padding: 5px;
-}
-
-.trans p{
-    transition: all .5s;
-    background-color: #A49379;
-    border-radius: 10px 100px / 120px;
-}
-
-.trans p:hover{
-    z-index: 1;
-
-	transform: scale(1.2);
-	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
-}
 
 

@@ -6,144 +6,211 @@
     box-sizing: border-box;
 }
 /* ---------Header---------- */
-.desktop-topmenuWrap{
-    width: 100%;
+@media (min-width: 1025px){
+    .desktop-topmenuWrap{
+        width: 100%;
+        
+        position: fixed; 
+        z-index: 1;
+        display: flex;
+        justify-content: center;
     
-    position: fixed; 
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-
-}
-
-.BLOGO{ 
+    }
     
-    margin-top: 30px;
-    padding-right: 50px;
+    .BLOGO{ 
+        
+        margin-top: 30px;
+        padding-right: 50px;
+        
+    }   
     
-}   
-
-.BLOGO img{
-    width: 95px;
-}
-
-.desktop-topmenuWrap ul{
-    list-style: none;
-    overflow: hidden;
-}
-
-
-.desktop-topmenuList{
-    width: 598px;
-}
-
-nav a {
-	position: relative;
-	display: inline-block;
-	
-	outline: none;
-	color: #FFF;
-	text-decoration: none;
-	letter-spacing: 1px;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-    font-family: "Bree Serif", serif;
-   
-}
-
-nav a:hover,
-nav a:focus {
-	outline: none;
-}
-
-.desktop-topmenuList .en{
-    padding: 41px 0;
-
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: "Bree Serif", serif;;
-}
-
-.en a {
-	overflow: hidden;
-	height: 20px;
-    margin: 15px 15px;
-}
-
-.en a span {
-	position: relative;
-	display: inline-block;
-	-webkit-transition: -webkit-transform 0.3s;
-	-moz-transition: -moz-transform 0.3s;
-	transition: transform 0.3s;
-}
-
-.en a span::before {
-	position: absolute;
-	top: 100%;
-	content: attr(data-hover);
-	font-weight: 700;
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-.en a:hover span,
-.en a:focus span {
-	-webkit-transform: translateY(-100%);
-	-moz-transform: translateY(-100%);
-	transform: translateY(-100%);
-}
-
-/* .desktop-topmenuList .en{
-    font: 15px/1 "Bree Serif", serif;
-}
-
-.desktop-topmenuList li{
-    float: left;
-    font-size: 24px;
-    padding: 0 20px;
-    padding-top: 60px;
-}
-
-.desktop-topmenuList a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.desktop-topmenuList ul{
-    list-style: none;
-    overflow: hidden;
+    .BLOGO img{
+        width: 95px;
+    }
     
+    .desktop-topmenuWrap ul{
+        list-style: none;
+        overflow: hidden;
+    }
+    
+    
+    .desktop-topmenuList{
+        width: 598px;
+    }
+    
+    nav a {
+        position: relative;
+        display: inline-block;
+        
+        outline: none;
+        color: #FFF;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-shadow: 0 0 1px rgba(255,255,255,0.3);
+        font-family: "Bree Serif", serif;
+       
+    }
+    
+    nav a:hover,
+    nav a:focus {
+        outline: none;
+    }
+    
+    .desktop-topmenuList .en{
+        padding: 41px 0;
+    
+        font-size: 15px;
+        line-height: 1.5;
+        font-family: "Bree Serif", serif;;
+    }
+    
+    .en a {
+        overflow: hidden;
+        height: 20px;
+        margin: 15px 15px;
+    }
+    
+    .en a span {
+        position: relative;
+        display: inline-block;
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        transition: transform 0.3s;
+    }
+    
+    .en a span::before {
+        position: absolute;
+        top: 100%;
+        content: attr(data-hover);
+        font-weight: 700;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+    
+    .en a:hover span,
+    .en a:focus span {
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    
+    /* .desktop-topmenuList .en{
+        font: 15px/1 "Bree Serif", serif;
+    }
+    
+    .desktop-topmenuList li{
+        float: left;
+        font-size: 24px;
+        padding: 0 20px;
+        padding-top: 60px;
+    }
+    
+    .desktop-topmenuList a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .desktop-topmenuList ul{
+        list-style: none;
+        overflow: hidden;
+        
+    }
+    */
+    /* 
+    .desktop-topmenuList a:hover{
+        color: #D9ADA0;
+    }  */
+    
+    
+    .top-linkList {
+        display: inline-flex;
+        padding-top: 50px;
+        width: 210px;
+    }
+    
+    .top-linkList li{
+            padding: 0 10px;
+    }
+    
+    .top-linkList li img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .top-linkList a img{
+        transition: all 0.3s linear;
+    }
+    
+    .top-linkList a:hover img{
+        transform: scale(1.5);
+    }
 }
-*/
-/* 
-.desktop-topmenuList a:hover{
-    color: #D9ADA0;
-}  */
+
+@media (max-width: 1024px){
+
+    /* 整列 */
+    .desktop-topmenuWrap{
+        width: 100%;
+        top: 25px;
+        z-index: 49;
+        position: fixed;
+        width: 100%;
+        padding: 0 20px;
+        display: inline-block;
+       
+    }
 
 
-.top-linkList {
-    display: inline-flex;
-    padding-top: 50px;
-    width: 210px;
+    /* LOGO */
+    .BLOGO{
+        margin-top: 0;
+    }
+
+    .BLOGO img{
+        width: 80px;
+    } 
+
+    
+    /* 關掉中間 */
+    .desktop-topmenuList, .lw-fb, .lw-ig, .lw-reservation{
+        display: none;
+    }
+    
+    /* 購物車 */
+
+    .top-linkList{
+        display: flex;
+        padding-top: 27px;
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .top-linkList li img{
+        width: 30px;
+    }
+
+    .top-linkList a img{
+        transition: all 0.3s linear;
+    }
+
+    .top-linkList a:hover img{
+        transform: scale(1.5);
+    
+    }
+
+    .lw-bag{
+        position: absolute;
+        top: 25px;
+        right: 30px;
+    }
+    
+
+
+
 }
 
-.top-linkList li{
-        padding: 0 10px;
-}
-
-.top-linkList li img{
-    width: 30px;
-    height: 30px;
-}
-
-.top-linkList a img{
-    transition: all 0.3s linear;
-}
-
-.top-linkList a:hover img{
-    transform: scale(1.5);
-}
 
 
 
