@@ -171,7 +171,8 @@ h2{
 }
 
 .flexslider {
-    width: 450px;
+    width: 50%;
+    min-width: 450px;
 }
 
 

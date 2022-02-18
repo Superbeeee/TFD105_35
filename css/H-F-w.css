@@ -148,13 +148,17 @@ nav a:focus {
 
 
 /* ---------Footer---------- */
+@media (min-width: 1025px){
 .desktop-footerWrap{
     width: 100%;
-    display: flex;
-    justify-content: center;
     height: 130px;
     background-color: #fff;
 
+}
+
+.content{
+    display: flex;
+    justify-content: center;
 }
 
 .infor{
@@ -209,5 +213,37 @@ nav a:focus {
 .reference-inner p{
     font-size: 12px;
     text-align: center;
+    padding-top: 30px;
     background-color: #fff;
+}
+
+}
+
+@media (max-width: 1024px){
+    .desktop-footerWrap{
+        padding: 20px 0;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .infor, .infor a{
+        font: 12px/1.8 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        letter-spacing: 1px;
+        color: #4d4d4d;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+
+    .copyright, .reference-inner{
+        font: 12px/1.8 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        color: #b2b2b2;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    
+
+    .footer-linkList{
+        display: none;
+    }
 }

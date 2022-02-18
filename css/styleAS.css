@@ -8,7 +8,6 @@ body{
 }
 
 
-
 .formenter-outWrap{
     padding-top: 50px;
     padding-bottom: 110px;
@@ -37,7 +36,7 @@ body{
     margin: 50px auto;
 }
 
-.content{
+.content-x{
     font-family: "STXihei", HEITI TC, "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
     font-weight: 700;
     font-size: 21px;
