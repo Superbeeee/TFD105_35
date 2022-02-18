@@ -1,7 +1,7 @@
 @import url("reset.css");
 @import url("H-F-b.css");
 
-@media (min-width: 1025px){
+@media (min-width: 64.06125em){
     body{
         line-height:1.4;
         font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
@@ -47,7 +47,7 @@
     }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 64.06125em){
     body{
         line-height:1.4;
         font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
@@ -56,7 +56,6 @@
     
     
     .formenter-outWrap{
-        width: 100%;
         margin: 0 auto;
         padding: 170px 20px 80px;
     }
