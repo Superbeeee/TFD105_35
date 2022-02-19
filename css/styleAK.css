@@ -56,15 +56,15 @@
         border-radius: 10% / 50%;
     }
 
-    .biglogo span{
-        color: #fff;
-    }
+    
     
     .slogan-area .ch{
         font-family: "微軟正黑體";
         font-weight: 700;
         font-size: 18px;
         letter-spacing: 2px;
+        color: #000;
+        
     }
     
     
@@ -232,15 +232,14 @@
         border-radius: 10% / 50%;
     }
 
-    .biglogo span{
-        color: #fff;
-    }
+    
     
     .slogan-area .ch{
         font-family: "微軟正黑體";
         font-weight: 700;
         font-size: 18px;
         letter-spacing: 2px;
+        color: #000;
     }
     
     
