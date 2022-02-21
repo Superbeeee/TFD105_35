@@ -13,6 +13,7 @@
     .checkoutWrap{
         padding-top: 50px;
         padding-bottom: 110px;
+        transition: all 0.3s linear;
     }
     
     .rowhead{
@@ -47,6 +48,14 @@
         margin-left: auto;
     }
     
+    .large-1{
+        width: 16.66667%;
+        float: left;
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+    }
+
     .large-2{
         width: 16.66667%;
         float: left;
@@ -73,6 +82,7 @@
         padding: 13px 5px;
         display: flex;
         justify-items: center;
+        width: 100%;
     }
     
     .text-center{
@@ -80,10 +90,14 @@
     }
     
     .text-center img{
-        padding: 0 10px;
+      
         width: 138px;
     }
     
+    .countWrap-hide-for-large{
+        display: none;
+    }
+
     .pName{
         padding-top: 60px;
     }
@@ -92,9 +106,10 @@
         font-weight: 600;
         letter-spacing: 1px;
         color: #333;
-        
+        padding-left: 10px;
         
     }
+    
     
     .countWrap{
         height: 15px;
@@ -102,21 +117,39 @@
         
         color: #333;
         border: 1px solid #4d4d4d;
-        position: relative;
-        top: 50%;
         transform: translateY(260%);
         padding: 3px 0;
         text-align: center;
         width: 85px;
-        margin-left: 185px;
-       
-        
-    }   
+        margin-left: 204px;
     
+    }   
     
     .countWrap img{
         width: 9px;
     }
+
+    .countWrap .minor{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 6px;
+    }
+
+    .countWrap .add{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        left: auto;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 6px;
+    }
+
     
     .text-center .price{
         font: 17px/1 "Bree Serif", serif;
@@ -129,7 +162,7 @@
     
     .itemClose{
         transform: translateY(43%);
-        margin-left: 80px;
+        margin-left: 88px;
       
     }
     
@@ -268,8 +301,9 @@
     .black-item .white{
         color: #272525;
         position: absolute;
-        top: 26%;
-        left: 30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -283,9 +317,10 @@
     
     
     .checkoutWrap{
-        /* width: 100%; */
+        width: auto;
         margin: 0 auto;
         padding: 170px 20px 80px;
+        transition: all 0.3s linear;
     }
     
     .rowhead{
@@ -312,6 +347,10 @@
         padding: 13px 0;
     
     }
+
+    .show-for-large1, .show-for-large2, .delete{
+        display: none;
+    }
     
     .row{
         max-width: 960px;
@@ -319,12 +358,21 @@
         margin-left: auto;
     }
     
-    .large-2{
-        width: 16.66667%;
+    .large-1{
+        width: 25%;
         float: left;
         clear: none;
         padding-right: 0.9375rem;
         padding-left: 0.9375rem;
+    }
+
+    .large-2{
+        width: 12%;
+       
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+        margin-left: 75%;
     }
     
     .show-for-large2{
@@ -345,63 +393,99 @@
         padding: 13px 5px;
         display: flex;
         justify-items: center;
+        width: 100%;
     }
     
     .text-center{
     
     }
     
-    .text-center img{
+    .text-center .pic{
+        width: 25%;
         padding: 0 10px;
-        width: 138px;
+    }
+
+    .text-center img{
+        
+        width: 100%;
+        height: auto;
     }
     
     .pName{
-        padding-top: 60px;
+        padding-top: 15px;
+        width: 41.66667%;
+        padding: 0 10px;
     }
     .pName .ch{
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         letter-spacing: 1px;
         color: #333;
         
         
     }
-    
-    .countWrap{
+
+    .countWrap-hide-for-large{
         height: 15px;
         font: 14px/1 "Bree Serif", serif;
         
         color: #333;
         border: 1px solid #4d4d4d;
         position: relative;
-        top: 50%;
-        transform: translateY(260%);
+        top: 0;
+        transform: translateY(50%);
         padding: 3px 0;
         text-align: center;
         width: 85px;
-        margin-left: 185px;
-       
-        
-    }   
+        /* margin-left: 185px; */
+    }
     
-    
-    .countWrap img{
+    .countWrap-hide-for-large img{
         width: 9px;
     }
+
+    .countWrap-hide-for-large .minor{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 6px;
+    }
+
+    .countWrap-hide-for-large .add{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        left: auto;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 6px;
+    }
+
+
+
+
+    .countWrap{
+        display: none;
+    }   
+    
+  
     
     .text-center .price{
         font: 17px/1 "Bree Serif", serif;
         color: #666;
         transform: translateY(43%);
         text-align: center;
-        margin-left: 120px;
-        width: 60px;
+        /* margin-left: 120px; */
+        width: 33.33333%;
     }
     
     .itemClose{
         transform: translateY(43%);
-        margin-left: 80px;
+        /* margin-left: 80px; */
       
     }
     
@@ -476,13 +560,13 @@
     }
     
     .bw-container{
-        font: 600 16px/1 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        font: 600 14px/1 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
         letter-spacing: 1px;
         color: #8c8c8c;
         border-bottom: 1px solid #000;
         margin-bottom: 40px;
-        margin-left: 58.33333%;
-        width: 41.66667%;
+        /* margin-left: 58.33333%; */
+        width: 100%;
     }
     
     .row-item{
@@ -507,6 +591,7 @@
     }
     
     .small-4-total-price{
+        font-size: 15px;
         text-align: left;
         width: 33.33333%;
         float: left;
@@ -522,8 +607,8 @@
     }
     
     .bw-btnWrap{
-        margin-left: 58.33333%;
-        width: 41.66667%;
+        
+        text-align: center;
         
     }
     
@@ -532,7 +617,9 @@
         height: 42px;
         display: inline-block;
         vertical-align: top;
-        margin-right: 25px;
+        
+        margin: 8px 10px 0px;
+       
         border: 1px solid #272525;
         position: relative;
         
@@ -551,8 +638,10 @@
     .black-item .white{
         color: #272525;
         position: absolute;
-        top: 26%;
-        left: 30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
     }
 }
 
