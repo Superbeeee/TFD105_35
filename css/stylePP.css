@@ -16,6 +16,8 @@
     
         display: flex;
         justify-content: center;
+
+        transition: all 0.3s linear;
         
     }
     
@@ -328,6 +330,8 @@
     .page-content-wrapper{
         padding: 170px 20px 80px;
         width: 100%;
+
+        transition: all 0.3s linear;
     }
     
     .left-menu-section{
@@ -644,6 +648,8 @@
     .page-content-wrapper{
         padding: 170px 20px 80px;
         width: 100%;
+
+        transition: all 0.3s linear;
     }
     
     .left-menu-section{

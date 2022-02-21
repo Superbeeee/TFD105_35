@@ -290,7 +290,7 @@
 @media (max-width: 64.06125em){
     .desktop-footerWrap{
         
-        width: 100%;
+        width: auto;
         border-top: 1px solid #000;
         padding: 20px 20px;
         text-align: center;

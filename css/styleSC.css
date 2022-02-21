@@ -1,275 +1,564 @@
 @import url("reset.css");
 @import url("H-F-b.css");
 
-body{
-    line-height:1.4;
-    font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-    background-color: #ECEAEA;
-}
-
-
-
-.checkoutWrap{
-    padding-top: 50px;
-    padding-bottom: 110px;
-}
-
-.rowhead{
+@media (min-width: 1025px){
+    body{
+        line-height:1.4;
+        font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        background-color: #ECEAEA;
+    }
+    
+    
+    
+    .checkoutWrap{
+        padding-top: 50px;
+        padding-bottom: 110px;
+    }
+    
+    .rowhead{
+            
+        font-size: 30px;
+        letter-spacing: 3px;
+        color: #000;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .CartConfirm{
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .step-1-head{
+        font-size: 16px;
+        letter-spacing: 3px;
+        color: #404040;
+        text-align: center;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        padding: 13px 0;
+    
+    }
+    
+    .row{
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .large-2{
+        width: 16.66667%;
+        float: left;
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+    }
+    
+    .show-for-large2{
+        margin-left: 33.33333%;
+        width: 16.66667%;
+        float: left;
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+    }
+    
+    .step-1-cartList ul{
         
-    font-size: 30px;
-    letter-spacing: 3px;
-    color: #000;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.CartConfirm{
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.step-1-head{
-    font-size: 16px;
-    letter-spacing: 3px;
-    color: #404040;
-    text-align: center;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    padding: 13px 0;
-
-}
-
-.row{
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.large-2{
-    width: 16.66667%;
-    float: left;
-    clear: none;
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-}
-
-.show-for-large2{
-    margin-left: 33.33333%;
-    width: 16.66667%;
-    float: left;
-    clear: none;
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-}
-
-.step-1-cartList ul{
+    }
     
-}
-
-.step-1-cartList li{
-    position: relative;
-    padding: 13px 5px;
-    display: flex;
-    justify-items: center;
-}
-
-.text-center{
-
-}
-
-.text-center img{
-    padding: 0 10px;
-    width: 138px;
-}
-
-.pName{
-    padding-top: 60px;
-}
-.pName .ch{
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #333;
+    .step-1-cartList li{
+        position: relative;
+        padding: 13px 5px;
+        display: flex;
+        justify-items: center;
+    }
+    
+    .text-center{
+    
+    }
+    
+    .text-center img{
+        padding: 0 10px;
+        width: 138px;
+    }
+    
+    .pName{
+        padding-top: 60px;
+    }
+    .pName .ch{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #333;
+        
+        
+    }
+    
+    .countWrap{
+        height: 15px;
+        font: 14px/1 "Bree Serif", serif;
+        
+        color: #333;
+        border: 1px solid #4d4d4d;
+        position: relative;
+        top: 50%;
+        transform: translateY(260%);
+        padding: 3px 0;
+        text-align: center;
+        width: 85px;
+        margin-left: 185px;
+       
+        
+    }   
     
     
-}
-
-.countWrap{
-    height: 15px;
-    font: 14px/1 "Bree Serif", serif;
+    .countWrap img{
+        width: 9px;
+    }
     
-    color: #333;
-    border: 1px solid #4d4d4d;
-    position: relative;
-    top: 50%;
-    transform: translateY(260%);
-    padding: 3px 0;
-    text-align: center;
-    width: 85px;
-    margin-left: 185px;
-   
+    .text-center .price{
+        font: 17px/1 "Bree Serif", serif;
+        color: #666;
+        transform: translateY(43%);
+        text-align: center;
+        margin-left: 120px;
+        width: 60px;
+    }
     
-}   
-
-
-.countWrap img{
-    width: 9px;
-}
-
-.text-center .price{
-    font: 17px/1 "Bree Serif", serif;
-    color: #666;
-    transform: translateY(43%);
-    text-align: center;
-    margin-left: 120px;
-    width: 60px;
-}
-
-.itemClose{
-    transform: translateY(43%);
-    margin-left: 80px;
-  
-}
-
-.itemClose img{
-    width: 18px;
-}
-
-
-
-
-.row-deliveryWrap{
-    background-color: transparent;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    padding: 18px 0;
-    margin-bottom: 26px;
-
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.shipping-method-select{
-    width: 25%;
-}
-
-.input{
-    display: none;
+    .itemClose{
+        transform: translateY(43%);
+        margin-left: 80px;
+      
+    }
     
-}
-
-.label{
+    .itemClose img{
+        width: 18px;
+    }
     
-}
-.delivery-tittle{
-    font: 16px/1.5 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-    letter-spacing: 1px;
-    color: #000;
-}
-
-.delivery-note{
-    font: 12px/1.8 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-    letter-spacing: 1px;
-    color: #8c8c8c;
-}
-
-.billWrap{
-    text-align: right;
-    position: relative;
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.billWrap .remark{
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 1.8;
-    color: #990033;
-    position: absolute;
-    top: 0;
-    left: 15px;
-    text-align: left;
-}
-
-.bw-container{
-    font: 600 16px/1 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-    letter-spacing: 1px;
-    color: #8c8c8c;
-    border-bottom: 1px solid #000;
-    margin-bottom: 40px;
-    margin-left: 58.33333%;
-    width: 41.66667%;
-}
-
-.row-item{
-    max-width: none;
-    margin-bottom: 14px;
-    width: 58.33333%;
-    margin-left: auto;
-    position: relative;
-}
-
-.small-4{
-    text-align: left;
-    width: 33.33333%;
-    float: left;
-    clear: none;
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-}
-
-.small-4-total-price{
-    text-align: left;
-    width: 33.33333%;
-    float: left;
-    clear: none;
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-    color: #000;
     
-}
-.small-8-total-price{
-    color: #000;
-    padding-top: 3px;
-}
-
-.bw-btnWrap{
-    margin-left: 58.33333%;
-    width: 41.66667%;
     
-}
-
-.bw-btnWrap .black-item{
-    width: 146px;
-    height: 42px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 25px;
-    border: 1px solid #272525;
-    position: relative;
     
-}
-
-.black-item>a {
+    .row-deliveryWrap{
+        background-color: transparent;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        padding: 18px 0;
+        margin-bottom: 26px;
     
-   
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .shipping-method-select{
+        width: 25%;
+    }
+    
+    .input{
+        display: none;
+        
+    }
+    
+    .label{
+        
+    }
+    .delivery-tittle{
+        font: 16px/1.5 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        letter-spacing: 1px;
+        color: #000;
+    }
+    
+    .delivery-note{
+        font: 12px/1.8 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        letter-spacing: 1px;
+        color: #8c8c8c;
+    }
+    
+    .billWrap{
+        text-align: right;
+        position: relative;
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .billWrap .remark{
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.8;
+        color: #990033;
+        position: absolute;
+        top: 0;
+        left: 15px;
+        text-align: left;
+    }
+    
+    .bw-container{
+        font: 600 16px/1 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        letter-spacing: 1px;
+        color: #8c8c8c;
+        border-bottom: 1px solid #000;
+        margin-bottom: 40px;
+        margin-left: 58.33333%;
+        width: 41.66667%;
+    }
+    
+    .row-item{
+        max-width: none;
+        margin-bottom: 14px;
+        width: 58.33333%;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .small-4{
+        text-align: left;
+        width: 33.33333%;
+        float: left;
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+    }
+    
+    .small-4-total-price{
+        text-align: left;
+        width: 33.33333%;
+        float: left;
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+        color: #000;
+        
+    }
+    .small-8-total-price{
+        color: #000;
+        padding-top: 3px;
+    }
+    
+    .bw-btnWrap{
+        margin-left: 58.33333%;
+        width: 41.66667%;
+        
+    }
+    
+    .bw-btnWrap .black-item{
+        width: 146px;
+        height: 42px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 25px;
+        border: 1px solid #272525;
+        position: relative;
+        
+    }
+    
+    .black-item>a {
+        
+       
+    }
+    
+    a{
+        text-decoration: none;
+        color: #272525;
+    }
+    
+    .black-item .white{
+        color: #272525;
+        position: absolute;
+        top: 26%;
+        left: 30%;
+    }
 }
 
-a{
-    text-decoration: none;
-    color: #272525;
+@media (max-width: 1024px){
+    body{
+        line-height:1.4;
+        font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        background-color: #ECEAEA;
+    }
+    
+    
+    
+    .checkoutWrap{
+        /* width: 100%; */
+        margin: 0 auto;
+        padding: 170px 20px 80px;
+    }
+    
+    .rowhead{
+        font-size: 18px;
+        margin-bottom: 24px;
+        letter-spacing: 3px;
+        color: #000;
+        text-align: center;
+    }
+    
+    .CartConfirm{
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .step-1-head{
+        font-size: 13px;
+        letter-spacing: 3px;
+        color: #404040;
+        text-align: center;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        padding: 13px 0;
+    
+    }
+    
+    .row{
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .large-2{
+        width: 16.66667%;
+        float: left;
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+    }
+    
+    .show-for-large2{
+        margin-left: 33.33333%;
+        width: 16.66667%;
+        float: left;
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+    }
+    
+    .step-1-cartList ul{
+        
+    }
+    
+    .step-1-cartList li{
+        position: relative;
+        padding: 13px 5px;
+        display: flex;
+        justify-items: center;
+    }
+    
+    .text-center{
+    
+    }
+    
+    .text-center img{
+        padding: 0 10px;
+        width: 138px;
+    }
+    
+    .pName{
+        padding-top: 60px;
+    }
+    .pName .ch{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #333;
+        
+        
+    }
+    
+    .countWrap{
+        height: 15px;
+        font: 14px/1 "Bree Serif", serif;
+        
+        color: #333;
+        border: 1px solid #4d4d4d;
+        position: relative;
+        top: 50%;
+        transform: translateY(260%);
+        padding: 3px 0;
+        text-align: center;
+        width: 85px;
+        margin-left: 185px;
+       
+        
+    }   
+    
+    
+    .countWrap img{
+        width: 9px;
+    }
+    
+    .text-center .price{
+        font: 17px/1 "Bree Serif", serif;
+        color: #666;
+        transform: translateY(43%);
+        text-align: center;
+        margin-left: 120px;
+        width: 60px;
+    }
+    
+    .itemClose{
+        transform: translateY(43%);
+        margin-left: 80px;
+      
+    }
+    
+    .itemClose img{
+        width: 18px;
+    }
+    
+    
+    
+    
+    .row-deliveryWrap{
+        background-color: transparent;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        padding: 18px 0;
+        margin-bottom: 14px;
+    
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .shipping-method-select{
+        width: 25%;
+    }
+    
+    .input{
+        display: none;
+        
+    }
+    
+    .label{
+        
+    }
+    .delivery-tittle{
+        font: 13px/1.5 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        letter-spacing: 1px;
+        color: #000;
+    }
+    
+    .delivery-note{
+        font: 12px/1.8 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        letter-spacing: 1px;
+        color: #8c8c8c;
+    }
+    
+    .billWrap{
+        text-align: right;
+        position: relative;
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .billWrap .remark{
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 1.8;
+        color: #990033;
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: left;
+
+        
+    
+    
+        border-bottom: 1px solid #000;
+        margin-bottom: 17px;
+        padding-bottom: 16px;
+    }
+    
+    .bw-container{
+        font: 600 16px/1 "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        letter-spacing: 1px;
+        color: #8c8c8c;
+        border-bottom: 1px solid #000;
+        margin-bottom: 40px;
+        margin-left: 58.33333%;
+        width: 41.66667%;
+    }
+    
+    .row-item{
+        max-width: none;
+        margin-bottom: 14px;
+        width: 58.33333%;
+        margin-left: auto;
+        position: relative;
+
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    
+    .small-4{
+        text-align: left;
+        width: 33.33333%;
+        float: left;
+        clear: none;
+        /* padding-right: 0.9375rem;
+        padding-left: 0.9375rem; */
+        padding: 0 10px;
+    }
+    
+    .small-4-total-price{
+        text-align: left;
+        width: 33.33333%;
+        float: left;
+        clear: none;
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+        color: #000;
+        
+    }
+    .small-8-total-price{
+        color: #000;
+        padding-top: 3px;
+    }
+    
+    .bw-btnWrap{
+        margin-left: 58.33333%;
+        width: 41.66667%;
+        
+    }
+    
+    .bw-btnWrap .black-item{
+        width: 146px;
+        height: 42px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 25px;
+        border: 1px solid #272525;
+        position: relative;
+        
+    }
+    
+    .black-item>a {
+        
+       
+    }
+    
+    a{
+        text-decoration: none;
+        color: #272525;
+    }
+    
+    .black-item .white{
+        color: #272525;
+        position: absolute;
+        top: 26%;
+        left: 30%;
+    }
 }
 
-.black-item .white{
-    color: #272525;
-    position: absolute;
-    top: 26%;
-    left: 30%;
-}
+
+
+
 
 
 
