@@ -13,10 +13,12 @@ body{
 
 
 .page-content-wrapper{
-    width: 1210px;
+    /* width: 1210px; */
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 40px auto;
+    padding: 0px 20px 80px;
 }
 
 .left-menu-section{

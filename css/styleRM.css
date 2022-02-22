@@ -82,6 +82,7 @@
         padding: 0.5em 1em;
         display: inline-block;
         background-color: #FFF; 
+        color: #000;
         cursor: pointer;
         text-align: center;
         transition: all 0.5s;
@@ -371,6 +372,7 @@
         padding: 0.5em 1em;
         display: inline-block;
         background-color: #FFF; 
+        color: #000;
         cursor: pointer;
         text-align: center;
         transition: all 0.5s;
@@ -669,6 +671,7 @@
         padding: 0.5em 1em;
         display: inline-block;
         background-color: #FFF; 
+        color: #000;
         cursor: pointer;
         text-align: center;
         transition: all 0.5s;
