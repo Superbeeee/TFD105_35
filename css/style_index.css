@@ -219,6 +219,12 @@
         
     }
 
+    #section4{
+        height: 145px !important;
+    }
+    
+
+
 @media (max-width: 1024PX){
     .articleWrap .en{
         font: 24px/1 "Bree Serif", serif;
