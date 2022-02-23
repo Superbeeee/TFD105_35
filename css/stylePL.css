@@ -414,7 +414,7 @@
     .product-info-list li{
         width: calc((100% - 10px) / 2);
         margin: 0 2px 50px;
-        background-color: #fff;
+        
         /* padding: 3px;
         border:3px solid transparent; */
     }
@@ -424,6 +424,7 @@
     .product-info-card{
         height: 320px;
         margin-bottom: 140px;
+        
         
         
         display: block;
@@ -452,7 +453,8 @@
     
     .info-blk{
         text-align: center;
-        padding-top: 26px;
+        padding-top: 10px;
+        background-color: #fff;
     }
     
     .info-blk>h3{
