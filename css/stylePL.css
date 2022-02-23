@@ -7,7 +7,7 @@
     body{
         line-height:1.4;
         font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-        background-color: #ECEAEA;
+        background-color: #DCEAF9;
     }
     
     
@@ -158,7 +158,7 @@
     body{
         line-height:1.4;
         font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-        background-color: #ECEAEA;
+        background-color: #DCEAF9;
     }
     
     
@@ -315,11 +315,11 @@
     }
 }
 
-@media (max-width: 767.98px){
+@media (max-width: 767.98px) and (min-width: 576px){
     body{
         line-height:1.4;
         font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-        background-color: #ECEAEA;
+        background-color: #DCEAF9;
     }
     
     
@@ -422,7 +422,7 @@
     
     
     .product-info-card{
-        height: 150px;
+        height: 320px;
         margin-bottom: 140px;
         
         
@@ -439,11 +439,11 @@
         
     
     }
-    
+    /*     
     .product-info-list li:hover{
         
         border:3px solid #D9ADA0;
-    }
+    } */
     
     .thumb-frame img{
         max-width: 100%;
@@ -453,6 +453,172 @@
     .info-blk{
         text-align: center;
         padding-top: 26px;
+    }
+    
+    .info-blk>h3{
+    
+    }
+    
+    .info-blk .price-blk{
+    
+    }
+    
+    .info-blk>h3{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .price-blk .del{
+        color: #999;
+    }
+    
+    .price-blk .price{
+        color: #ea4c4c;
+    }
+}
+
+@media (max-width: 576px){
+    body{
+        line-height:1.4;
+        font-family: "STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+        background-color: #DCEAF9;
+    }
+    
+    
+    .page-content-wrapper{
+        width: auto;
+        padding: 170px 10px 80px;
+    }
+    
+    .left-menu-section{
+        background-color: #fff;
+        text-align: center;
+        overflow: hidden;
+    
+        
+        
+    }
+    
+    .left-menu-section ul{
+        /* display: flex;
+        justify-content: space-around; */
+        
+    }
+   
+
+
+    .left-menu-section>h3{
+        font-size: 20px;
+        /* text-align: center; */
+        line-height: 54px;
+        color: #D9ADA0;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    
+    
+    .left-menu-section li{
+      
+        line-height: 40px;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    
+    .left-menu-section a{
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    
+    .left-menu-section li a:hover{
+        color: #D9ADA0;
+    }
+    
+    .left-menu-list li:first-child a{
+        font-weight: bold;
+        
+    }
+    
+    .left-menu-list li:first-child a:hover{
+        color: black;
+    }
+    
+    
+    .main-content-blk{
+        /* margin-left: 30px; */
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    .breadcrumb{
+        padding-left: 30px;
+      
+    }
+    
+    .breadcrumb a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .product-info-list{
+     
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+      
+       
+        
+     
+        
+    }
+    
+    .product-info-list li{
+        width: calc((100% - 10px) / 2);
+        margin: 0 2px 50px;
+       
+        
+        /* padding: 3px;
+        border:3px solid transparent; */
+    }
+    
+    
+    
+    .product-info-card{
+        height: 150px;
+        margin-bottom: 140px;
+        
+        
+        
+        
+        display: block;
+    }
+    
+    
+    
+    .product-info-card a{
+        text-decoration: none;
+        height: 289px;
+        color: black;
+        display: block;
+        
+    
+    }
+    /*     
+    .product-info-list li:hover{
+        
+        border:3px solid #D9ADA0;
+    } */
+    
+    .thumb-frame img{
+        max-width: 100%;
+        /* height: 100%; */
+    }
+    
+    .info-blk{
+        text-align: center;
+        /* padding-top: 10px; */
+        background-color: #fff;
     }
     
     .info-blk>h3{
