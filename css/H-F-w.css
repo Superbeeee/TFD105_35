@@ -223,15 +223,14 @@
     background-color: #fff;
 
     transition: all 0.3s linear;
-    display: flex;
-    justify-content: center;
+ 
 
 }
 
-/* .content{
+.content{
     display: flex;
     justify-content: center;
-} */
+}
 
 .infor{
     font-size: 17px;
