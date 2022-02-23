@@ -18,6 +18,7 @@
         justify-content: center;
         margin: 40px auto;
         padding: 0px 20px 80px;
+        transition: all 0.3s linear;
     }
     
     .left-menu-section{
@@ -165,6 +166,7 @@
     .page-content-wrapper{
         width: auto;
         padding: 170px 20px 80px;
+        transition: all 0.3s linear;
     }
     
     .left-menu-section{
@@ -326,6 +328,7 @@
     .page-content-wrapper{
         width: auto;
         padding: 170px 10px 80px;
+        transition: all 0.3s linear;
     }
     
     .left-menu-section{
@@ -490,6 +493,7 @@
     .page-content-wrapper{
         width: auto;
         padding: 170px 10px 80px;
+        transition: all 0.3s linear;
     }
     
     .left-menu-section{
