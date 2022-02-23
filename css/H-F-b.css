@@ -1,5 +1,7 @@
+
+
 /* ---------Header---------- */
-@media (min-width: 64.06125em){
+@media (min-width: 1025px){
     .desktop-topmenuWrap{
         width: 100%;
 
@@ -142,14 +144,11 @@
 }
 
 
-@media (max-width: 64.06125em){
+@media (max-width: 1024px){
 
     /* 整列 */
     .desktop-topmenuWrap{
         width: 100%;
-        
-        
-        
         top: 25px;
         z-index: 49;
         position: fixed;
@@ -166,7 +165,7 @@
     }
 
     .BLOGO img{
-        width: 100px;
+        width: 80px;
     } 
 
     
@@ -186,7 +185,7 @@
     }
     
     .top-linkList li img{
-        width: 40px;
+        width: 30px;
     }
 
     .top-linkList a img{
@@ -214,7 +213,7 @@
 
 
 /* ----------Footer---------- */
-@media (min-width: 64.06125em){
+@media (min-width: 1025px){
     .desktop-footerWrap{
         width: 100%;
         
@@ -288,7 +287,7 @@
 
 
 
-@media (max-width: 64.06125em){
+@media (max-width: 1024px){
     .desktop-footerWrap{
         
         width: auto;

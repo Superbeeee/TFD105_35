@@ -157,12 +157,9 @@
         top: 25px;
         z-index: 49;
         position: fixed;
-        width: 100%;
         padding: 0 20px;
         display: inline-block;
-
         transition: all 0.3s linear;
-       
     }
 
 
