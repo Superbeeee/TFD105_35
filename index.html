@@ -46,7 +46,7 @@
 
     <!--------- Main-content --------->
     <div id="fullpage" class="Main">
-        <div class="section">
+        <div class="section" id="section0">
             <div class="fp-tablecell1">
                 <a href="PL.html">
                     <img src="img/首頁1.png" alt="">
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <dic class="section">
+        <dic class="section" id="section1">
             <div class="fp-tablecell2">
                 <video id="vid" width="100%" height="100%" loop muted data-autoplay playsinline  >
                     <source src="./video/sbs-intro.mp4" type="video/mp4">
@@ -72,7 +72,7 @@
     
                 <a href="Art.html">
                     <div class="articleWrap">
-                        <div class="en2">What is needed is a Bean Bang!</div>
+                        <div class="en">What is needed is a Bean Bang!</div>
                         <div class="m-btn2">
                             <span class="white">線上探索</span>
                         </div>
@@ -82,7 +82,7 @@
             </div>
         </dic>
 
-        <div class="section">
+        <div class="section" id="section2">
             <div class="fp-tablecell3">
                 <a href="RM.html">
                     <img src="img/首頁3.png" alt="">
@@ -98,7 +98,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" id="section4">
             <div class="fp-tablecell4">
                 <a href="MP.html">
                     <img src="img/首頁4.png" alt="">
@@ -176,7 +176,6 @@
         //fullpage
         new fullpage('#fullpage', {
             navigation: true,
-            responsiveWidth: 700,
             scrollingSpeed: 1200,
             verticalCentered: true,
             anchors: ['SC', 'ART', 'RM', 'MP'],

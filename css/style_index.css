@@ -2,7 +2,7 @@
 @import url("H-F-w.css");
 /* reset放第一行 */
 
-@media (min-width: 1024px){
+
     body{
         line-height:1.4;
         font-family:"STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
@@ -11,8 +11,8 @@
     
     .section{
         display: block;
-        /* width: 100%; */
-        height:100%;
+        /* width: 100%;  */
+        /* height:100%; */
         
     }
     .fp-tablecell1{
@@ -21,21 +21,24 @@
         background-size: cover;
         background-repeat: no-repeat; */
     
-        /* width: 100%; */
-        /* height: 864px; */
+        width: 100%;
+        height: 100%;
         position: relative;
     }
     
-    img{
+    .section img{
         width: 100%;
+        height:100%;
         display: block;
-        
+        background-position: center center;
+        background-size: contain;
+        object-fit: cover;
     }
     
     
     .articleWrap{
         position: absolute;
-        top: 45%;
+        top: 65%;
         left: 50%;
         transform: translateX(-50%);
         /* 置中後回去原本自己的寬度!!  */
@@ -88,6 +91,7 @@
     
     .fp-tablecell2{
         width: 100%;
+        height: 100%;
         text-align: center;
         position: relative;
         
@@ -103,7 +107,7 @@
      
     }
     
-    .en2{
+    .en{
         font: 36px/1 "Bree Serif", serif;
         letter-spacing: 3px;
         line-height: 1.2;
@@ -137,7 +141,7 @@
         background-repeat: no-repeat; */
         position: relative;
         width: 100%;
-        /* height: 864px; */
+        height: 100%;
         
     }
     
@@ -194,7 +198,7 @@
         background-size: cover;
         background-repeat: no-repeat; */
         width: 100%;
-        /* height: 864px; */
+        height: 100%;
         position: relative;
         
     }
@@ -214,51 +218,9 @@
     .fp-tablecell4 .m-btn{
         
     }
-}
 
-@media (max-width: 1024px){
-    body{
-        line-height:1.4;
-        font-family:"STXihei", "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
-        width: 100%;
-    }
-    
-    .section{
-        display: block;
-        width: 100%;
-        
-    }
-    .fp-tablecell1{
-        
-        /* background-image: url(../img/首頁1.png);
-        background-size: cover;
-        background-repeat: no-repeat; */
-    
-        width: 100%;
-        /* height: 864px; */
-        position: relative;
-    }
-    
-    img{
-        width: 100%;
-        display: block;
-    }
-    
-    
-    .articleWrap{
-        position: absolute;
-        /* top: 45%; */
-        left: 50%;
-        transform: translateX(-50%);
-        /* 置中後回去原本自己的寬度!!  */
-    
-        text-align: center;
-        transition: all 1.2s 1s;
-        width: 90%;
-        bottom: 20%;
-    }
-    
-    .fp-tablecell1 .en{
+@media (max-width: 1024PX){
+    .articleWrap .en{
         font: 24px/1 "Bree Serif", serif;
         letter-spacing: 5px;
         line-height: 1.2;
@@ -266,13 +228,6 @@
         margin-bottom: 11px;
         transition: all 0.5s;
         text-shadow: black 0.1em 0.1em 0.5em;
-    }
-    
-    .fp-tablecell1 .m-btn{
-    }
-    
-    .white:hover{
-        background-color: #D9ADA0;
     }
     
     .white{
@@ -294,64 +249,10 @@
     }
     
     
-    .Main a{
-        text-decoration: none;
-    }
-    
-    
-    .fp-tablecell2{
-        width: 100%;
-        text-align: center;
-        position: relative;
-        
-    }
-    
-    video{
-        display: block;
-    }
-    
-    .en2{
-        font: 36px/1 "Bree Serif", serif;
-        letter-spacing: 3px;
-        line-height: 1.2;
-        color: #fff;
-        margin-bottom: 22px;
-        transition: all 0.5s;
-    
-    
-        /* position: absolute;
-        top: 55%;
-        left: 50%;
-        transform:translate(-50%);
-        置中後回去原本自己的寬度!! */
-    
-        text-shadow: black 0.1em 0.1em 0.5em;
-    }
-    
-    .m-btn2{
-        /* position: absolute;
-        top: 64%;
-        left: 50%;
-    
-        transform:translate(-50%); */
-        
-    }
-    
-    .fp-tablecell3{
-        
-        /* background-image: url(../img/首頁3.png);
-        background-size: cover;
-        background-repeat: no-repeat; */
-        position: relative;
-        width: 100%;
-        /* height: 864px; */
-        
-    }
-    
     .articleWrap-for3{
         position: absolute;
-        top: 45%;
-        left: 68%;
+        top: 50%;
+        left: 50%;
         
         transform:translate(-50%);
         /* 置中後回去原本自己的寬度!!  */
@@ -364,63 +265,17 @@
     
     
     .en3{
-        font: 36px/1 "Bree Serif", serif;
+        font: 24px/1 "Bree Serif", serif;
         letter-spacing: 3px;
         line-height: 1.2;
         color: #fff;
         margin-bottom: 22px;
         transition: all 0.5s;
-    
-        /* position: absolute;
-        top: 45%;
-        left: 68%;
-        
-        transform:translate(-50%); */
-        
-    
+
         text-shadow: black 0.1em 0.1em 0.5em;
     }
     
-    .m-btn3{
-        /* position: absolute;
-        top: 57%;
-        left: 73%;
-       
-        transform:translate(-50%); */
-    }
     
-    
-    
-    
-    
-    
-    
-    .fp-tablecell4{
-        
-        /* background-image: url(../img/首頁4.png);
-        background-size: cover;
-        background-repeat: no-repeat; */
-        width: 100%;
-        /* height: 864px; */
-        position: relative;
-        
-    }
-    
-    
-    
-    .fp-tablecell4 .en{
-        font: 36px/1 "Bree Serif", serif;
-        letter-spacing: 3px;
-        line-height: 1.2;
-        color: #fff;
-        margin-bottom: 22px;
-        transition: all 0.5s;
-        text-shadow: black 0.1em 0.1em 0.5em;
-    }
-    
-    .fp-tablecell4 .m-btn{
-        
-    }
 }
 
 
