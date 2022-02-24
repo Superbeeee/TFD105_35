@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index page</title>
     <title>Document</title>
+    <!-- 上滑套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
     <!-- <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css"> -->
     <link href="./css/style_index.css" rel="stylesheet" type="text/css">
     
@@ -51,10 +53,10 @@
                 <a href="PL.html">
                     <img src="img/首頁1.png" alt="">
 
-                    <div class="articleWrap">
-                        <div class="en">BEANGO! Get a Taste!</div>
+                    <div class="articleWrap" >
+                        <div class="en" data-aos="fade-up"  data-aos-duration="2000">BEANGO! Get a Taste!</div>
                     
-                        <div class="m-btn">
+                        <div class="m-btn" data-aos="fade-up"  data-aos-duration="2000">
                             <span class="white">線上購買</span>
                         </div>
                     </div>
@@ -188,6 +190,8 @@
   
     
     
+    <!-- 上滑套件 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <!-- <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script> -->
@@ -195,6 +199,9 @@
     
 
     <script type="text/javascript">
+        //上滑套件
+        AOS.init();
+
         // 影片
         document.getElementById('vid').play();
     
