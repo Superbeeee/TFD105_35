@@ -60,10 +60,11 @@
     
     .slogan-area .ch{
         font-family: "微軟正黑體";
-        font-weight: 700;
+        font-weight: 400;
         font-size: 18px;
-        letter-spacing: 2px;
-        color: #000;
+        line-height: 32px;
+        letter-spacing: 3px;
+        color: #626262;
         
     }
     
@@ -236,11 +237,13 @@
     
     .slogan-area .ch{
         font-family: "微軟正黑體";
-        font-weight: 700;
-        font-size: 18px;
+        font-weight: 400;
+        font-size: 16px;
         letter-spacing: 2px;
-        color: #000;
+        color: #626262;
         text-decoration: none;
+        line-height: 32px;
+        letter-spacing: 3px;
     }
     
     
