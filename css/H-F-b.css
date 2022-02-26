@@ -289,9 +289,7 @@
 
 @media (max-width: 1024px){
     .desktop-footerWrap{
-        
         width: auto;
-        border-top: 1px solid #000;
         padding: 20px 0px;
         text-align: center;
         margin-right: auto;
