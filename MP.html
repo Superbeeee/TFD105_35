@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map Page</title>
     <title>Document</title>
+    <!-- 上滑套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
     <link href="./css/styleMP.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -50,32 +52,45 @@
         </div>
         
         <div class="map-info">
-            <div class="title">
+            <div class="title" data-aos="fade-up"  data-aos-duration="2000">
                 <p>交通資訊</p>
             </div>
     
             <div class="detail-info">
+
                 <div class="info">
-                    <p>
-                        電話:089-862050
-                        <br>
-                        地址:台東縣池上鄉中山路通水巷12號
-                        <br>
-                        Open_Mon.-Fri.08:00-17:00
-                        <br>
-                        Sat.-Sun. 08:00-21:00
-                    </p>
+                    <div class="info-img">
+                        <img  data-aos="zoom-out" data-aos-duration="1000" src="/photo of MAP/building.png" alt="">
+                    </div>
+                    <div class="info-content">
+                        <p>
+                            電話:089-862050
+                            <br>
+                            地址:台東縣池上鄉中山路通水巷12號
+                            <br>
+                            Open_Mon.-Fri.08:00-17:00
+                            <br>
+                            <!-- Sat.-Sun. 08:00-21:00 -->
+                        </p>
+                    </div> 
+                    
                     
                 </div>
     
                 <div class="trans">
-                    <p>
-                        轉乘方式:
-                        <br>
-                        搭乘火車到達池上火車站後往
-                        <br>
-                        池上市區方向徒步3分鐘路程。
-                    </p>
+                    <div class="trans-img">
+                        <img  data-aos="zoom-out" data-aos-duration="1000" src="/photo of MAP/train-station.png" alt="">
+                    </div>
+                    <div class="trans-content">
+                        <p>
+                            轉乘方式:
+                            <br>
+                            搭乘火車到達池上火車站後往
+                            <br>
+                            池上市區方向徒步3分鐘路程。
+                        </p>
+                    </div>
+                    
                     
                 </div>
             </div>
@@ -138,4 +153,13 @@
             
     </div>
 
+
+    <!-- 上滑套件 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        //上滑套件
+        AOS.init();
+    </script>
+
 </body>
+</html>

@@ -36,17 +36,26 @@
     
     .detail-info{
         display: flex;
-        margin: 200px auto;
-        height: 150px;
+        justify-content: center;
+        margin: 130px auto;
+        /* height: 150px; */
         align-items: center;
         
     }
     
-    
-    
     .info{
+        width: 370px;
+       
+    }
+
+    img{
+        width:100%;
+    }
+    
+    
+    .info-content{
         width:350px;
-        margin: 0 auto;
+        margin: 60px auto;
         color: #fff;
         font-size: 18px;
         font-family: "微軟正黑體";
@@ -56,13 +65,13 @@
         
     }
     
-    .info p{
+    .info-content p{
         transition: all .5s;
         background-color: #A49379;
         border-radius: 10px 100px / 120px;
     }
     
-    .info p:hover{
+    .info-content p:hover{
         z-index: 1;
     
         transform: scale(1.2);
@@ -70,9 +79,15 @@
     }
     
     .trans{
+        width: 370px;
+        margin-left: 200px;
+    }
+
+
+    .trans-content{
         margin-left: 100px;
         width:320px;
-        margin: 0 auto;
+        margin: 60px auto;
         color: #fff;
         font-size: 18px;
         font-family: "微軟正黑體";
@@ -80,13 +95,13 @@
         padding: 5px;
     }
     
-    .trans p{
+    .trans-content p{
         transition: all .5s;
         background-color: #A49379;
         border-radius: 10px 100px / 120px;
     }
     
-    .trans p:hover{
+    .trans-content p:hover{
         z-index: 1;
     
         transform: scale(1.2);
@@ -142,24 +157,33 @@
     
     
     .info{
-        width:350px;
-        margin: 0 auto;
+        width: 100%;
+       
+    }
+
+    img{
+        width:100%;
+    }
+    
+    
+    .info-content{
+        width: 100%;
+        margin: 60px auto;
         color: #fff;
         font-size: 16px;
         font-family: "微軟正黑體";
         text-align: center;
-        padding: 5px;
         
         
     }
     
-    .info p{
+    .info-content p{
         transition: all .5s;
         background-color: #A49379;
         border-radius: 10px 100px / 120px;
     }
     
-    .info p:hover{
+    .info-content p:hover{
         z-index: 1;
     
         transform: scale(1.2);
@@ -167,23 +191,26 @@
     }
     
     .trans{
-        margin-left: 100px;
-        width:320px;
-        margin: 20px auto;
+        width: 100%;
+    }
+
+
+    .trans-content{
+        width: 100%;
+        margin: 60px auto;
         color: #fff;
         font-size: 16px;
         font-family: "微軟正黑體";
         text-align: center;
-        padding: 5px;
     }
     
-    .trans p{
+    .trans-content p{
         transition: all .5s;
         background-color: #A49379;
         border-radius: 10px 100px / 120px;
     }
     
-    .trans p:hover{
+    .trans-content p:hover{
         z-index: 1;
     
         transform: scale(1.2);
