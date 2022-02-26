@@ -61,8 +61,6 @@
         font-size: 18px;
         font-family: "微軟正黑體";
         text-align: center;
-
-        
     }    
     
     
@@ -103,7 +101,7 @@
         50% {
           background-position: 100% 50%;
         }
-      }
+    }
     
     .info-content p:hover{
         z-index: 1;
@@ -242,7 +240,39 @@
     .info-content p{
         transition: all .5s;
         background-color: #A49379;
-        border-radius: 10px 100px / 120px;
+        
+        position: relative;
+        --border-width: 5px;
+    }
+
+    .info-content p::after{
+        position: absolute;
+            content: "";
+            top: calc(-1 * var(--border-width));
+            left: calc(-1 * var(--border-width));
+            z-index: -1;
+            width: calc(100% + var(--border-width) * 2);
+            height: calc(100% + var(--border-width) * 2);
+            background-image: linear-gradient(305deg, 
+            hsl(151,59%,76%),
+            hsl(202.429,59%,76%),
+            hsl(253.857,59%,76%),
+            hsl(305.286,59%,76%),
+            hsl(356.714,59%,76%),
+            hsl(48.143,59%,76%),
+            hsl(99.571,59%,76%));
+            background-size: 300% 300%;
+            background-position: 0 50%;
+            border-radius: calc(2 * var(--border-width));
+            animation: moveGradient 4s alternate infinite;
+
+    }
+
+
+    @keyframes moveGradient {
+        50% {
+          background-position: 100% 50%;
+        }
     }
     
     .info-content p:hover{
@@ -269,7 +299,31 @@
     .trans-content p{
         transition: all .5s;
         background-color: #A49379;
-        border-radius: 10px 100px / 120px;
+        position: relative;
+        --border-width: 5px; 
+    }
+
+    .trans-content p::after{
+        position: absolute;
+            content: "";
+            top: calc(-1 * var(--border-width));
+            left: calc(-1 * var(--border-width));
+            z-index: -1;
+            width: calc(100% + var(--border-width) * 2);
+            height: calc(100% + var(--border-width) * 2);
+            background-image: linear-gradient(305deg, 
+            hsl(151,59%,76%),
+            hsl(202.429,59%,76%),
+            hsl(253.857,59%,76%),
+            hsl(305.286,59%,76%),
+            hsl(356.714,59%,76%),
+            hsl(48.143,59%,76%),
+            hsl(99.571,59%,76%));
+            background-size: 300% 300%;
+            background-position: 0 50%;
+            border-radius: calc(2 * var(--border-width));
+            animation: moveGradient 4s alternate infinite;
+
     }
     
     .trans-content p:hover{
