@@ -66,6 +66,8 @@
     
     .info-content p{
         transition: all .5s;
+        color: #fff;
+        text-decoration:none;
         background-color: #A49379;
 
         position: relative;
@@ -239,6 +241,8 @@
     
     .info-content p{
         transition: all .5s;
+        color: #fff;
+        text-decoration:none;
         background-color: #A49379;
         
         position: relative;
@@ -280,6 +284,7 @@
     
         transform: scale(1.2);
         box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+        color: #fff;
     }
     
     .trans{
@@ -301,6 +306,7 @@
         background-color: #A49379;
         position: relative;
         --border-width: 5px; 
+        
     }
 
     .trans-content p::after{
