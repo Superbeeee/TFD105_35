@@ -303,13 +303,13 @@
             </section>
 
             <!--------- Jump --------->
-            <div class="backtop">
-                <a href="#" class="uparrow">
+            <button class="backtop">
+                <div class="uparrow">
                     <img src="photo/uparrow.png" alt="">
-                </a>
+                </div>
                 
                 <p>飛上去</p>
-            </div>
+            </button>
 
 
 
@@ -320,7 +320,7 @@
 
 
     <!--------- Footer --------->
-    <div class=desktop-footerWrap>
+    <div class="desktop-footerWrap">
         <div class="content">
             <div class="infor"> 
                 | 
@@ -353,9 +353,6 @@
                 <div class="copyright">Copyright © bean All Rights Reserved​​</div>
             </div>
 
-            
-
-
         </div>
 
         <div class="reference">
@@ -374,8 +371,37 @@
 
     <!-- 上滑套件 -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
+        //上滑
          AOS.init();
+
+        //上飛JS
+        const showOnPx = 100;
+        const backToTopButton = document.querySelector(".backtop");
+
+        const scrollContainer = () => {
+        return document.documentElement || document.body;
+        };
+
+        const goToTop = () => {
+        document.body.scrollIntoView({
+            behavior: "smooth"
+        });
+        };
+
+        document.addEventListener("scroll", () => {
+        console.log("Scroll Height: ", scrollContainer().scrollHeight);
+        console.log("Client Height: ", scrollContainer().clientHeight);
+
+        const scrolledPercentage =
+            (scrollContainer().scrollTop /
+            (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
+            100;
+
+        });
+
+        backToTopButton.addEventListener("click", goToTop);
     </script>
     
 </body>

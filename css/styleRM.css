@@ -10,6 +10,7 @@
     
     
     .page-menu{
+        margin: 0 auto;
         transition: all 0.3s linear;
     }
     
@@ -72,11 +73,9 @@
         line-height: 1.4;
     }
     
-    .btn-group button{
-        
-    }
+ 
     
-    button{
+    .btn-group button{
         width: 76px;
         height: 45px;
         padding: 0.5em 1em;
@@ -94,7 +93,7 @@
         
     }
     
-    .active{ 
+    .btn-group button.active{ 
         background-color: #0074a9 !important; 
         color: #FFF;
     }
@@ -116,7 +115,7 @@
         transition: all 0.5s;
     } */
     
-    button:hover{
+    .btn-group button:hover{
         color: #FFF;
         background-color: #C2BD91;
     }
@@ -246,27 +245,31 @@
     
     
     
-    /* -----Jump----- */
+    /* ------flyout------ */
     .backtop{
+        width: 100%;
         margin: 130px auto;
-        text-align: center;
+        /* margin-left: 100px; */
+        /* text-align: center; */
+        background-color: #FAEAE3;
+        border: none;
     }
     
     .uparrow{
-        background-color: #D9ADA0;
+        background-color: #A49379;
         width: 38px;
         height: 38px;
         border-radius: 50px;
     
     }
     
-    .backtop a{
+    .uparrow{
         display: block;
         margin: 0 auto;
         transition: all .5s;
     }
     
-    .backtop a:hover{
+    .uparrow:hover{
         z-index: 1;
     
         transform: scale(1.2);
@@ -277,6 +280,8 @@
         width: 38px;
         height: 38px;
     }
+    
+    
     
     .backtop p{
         writing-mode: vertical-lr;
@@ -362,11 +367,9 @@
         line-height: 1.4;
     }
     
-    .btn-group button{
-        
-    }
+  
     
-    button{
+    .btn-group button{
         width: 76px;
         height: 45px;
         padding: 0.5em 1em;
@@ -384,7 +387,7 @@
         
     }
     
-    .active{ 
+    .btn-group button.active{ 
         background-color: #0074a9 !important; 
         color: #FFF;
     }
@@ -406,7 +409,7 @@
         transition: all 0.5s;
     } */
     
-    button:hover{
+    .btn-group button:hover{
         color: #FFF;
         background-color: #C2BD91;
     }
@@ -545,27 +548,30 @@
     
     
     
-    /* -----Jump----- */
+    /* ------flyout------ */
     .backtop{
+        width: 100%;
         margin: 130px auto;
         text-align: center;
+        background-color: #FAEAE3;
+        border: none;
     }
     
     .uparrow{
-        background-color: #D9ADA0;
+        background-color: #A49379;
         width: 38px;
         height: 38px;
         border-radius: 50px;
     
     }
     
-    .backtop a{
+    .uparrow{
         display: block;
         margin: 0 auto;
         transition: all .5s;
     }
     
-    .backtop a:hover{
+    .uparrow:hover{
         z-index: 1;
     
         transform: scale(1.2);
@@ -576,6 +582,8 @@
         width: 38px;
         height: 38px;
     }
+    
+    
     
     .backtop p{
         writing-mode: vertical-lr;
@@ -661,11 +669,8 @@
         line-height: 1.4;
     }
     
+   
     .btn-group button{
-        
-    }
-    
-    button{
         width: 70px;
         height: 45px;
         padding: 0.5em 1em;
@@ -683,7 +688,7 @@
         
     }
     
-    .active{ 
+    .btn-group button.active{ 
         background-color: #0074a9 !important; 
         color: #FFF;
     }
@@ -705,7 +710,7 @@
         transition: all 0.5s;
     } */
     
-    button:hover{
+    .btn-group button:hover{
         color: #FFF;
         background-color: #C2BD91;
     }
@@ -837,27 +842,30 @@
     
     
     
-    /* -----Jump----- */
+    /* ------flyout------ */
     .backtop{
+        width: 100%;
         margin: 130px auto;
         text-align: center;
+        background-color: #FAEAE3;
+        border: none;
     }
     
     .uparrow{
-        background-color: #D9ADA0;
+        background-color: #A49379;
         width: 38px;
         height: 38px;
         border-radius: 50px;
     
     }
     
-    .backtop a{
+    .uparrow{
         display: block;
         margin: 0 auto;
         transition: all .5s;
     }
     
-    .backtop a:hover{
+    .uparrow:hover{
         z-index: 1;
     
         transform: scale(1.2);
@@ -868,6 +876,8 @@
         width: 38px;
         height: 38px;
     }
+    
+    
     
     .backtop p{
         writing-mode: vertical-lr;

@@ -284,14 +284,15 @@
             </div>
         </div>
 
+
         <!--------- Jump --------->
-        <div class="backtop">
-            <a href="#" class="uparrow">
+        <button class="backtop">
+            <div class="uparrow">
                 <img src="photo/uparrow.png" alt="">
-            </a>
+            </div>
             
             <p>飛上去</p>
-        </div>
+        </button>
 
     </main>
 
@@ -479,6 +480,33 @@
                 }
             });
         });
+
+        //上飛JS
+        const showOnPx = 100;
+        const backToTopButton = document.querySelector(".backtop");
+
+        const scrollContainer = () => {
+        return document.documentElement || document.body;
+        };
+
+        const goToTop = () => {
+        document.body.scrollIntoView({
+            behavior: "smooth"
+        });
+        };
+
+        document.addEventListener("scroll", () => {
+        console.log("Scroll Height: ", scrollContainer().scrollHeight);
+        console.log("Client Height: ", scrollContainer().clientHeight);
+
+        const scrolledPercentage =
+            (scrollContainer().scrollTop /
+            (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
+            100;
+
+        });
+
+        backToTopButton.addEventListener("click", goToTop);
     
 
     

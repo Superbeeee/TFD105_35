@@ -352,6 +352,8 @@
     .backtop{
         margin: 130px auto;
         text-align: center;
+        background-color: #D9ADA0;
+        border: none;
     }
     
     .uparrow{
@@ -362,13 +364,13 @@
     
     }
     
-    .backtop a{
+    .uparrow{
         display: block;
         margin: 0 auto;
         transition: all .5s;
     }
     
-    .backtop a:hover{
+    .uparrow:hover{
         z-index: 1;
     
         transform: scale(1.2);
@@ -739,6 +741,8 @@
     .backtop{
         margin: 130px auto;
         text-align: center;
+        background-color: #D9ADA0;
+        border: none;
     }
     
     .uparrow{
@@ -749,13 +753,13 @@
     
     }
     
-    .backtop a{
+    .uparrow{
         display: block;
         margin: 0 auto;
         transition: all .5s;
     }
     
-    .backtop a:hover{
+    .uparrow:hover{
         z-index: 1;
     
         transform: scale(1.2);
