@@ -222,7 +222,7 @@
     #webapp_cover {
         position: absolute;
         top: 45px;
-        right: 50px;
+        right: 32px;
         /* width: 39px; */
         margin: 0 auto;
         transform: translateY(-50%) scale(2);
