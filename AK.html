@@ -43,6 +43,7 @@
             </a></li>
         </ul>
 
+        <!-- 漢堡 -->
         <div id="webapp_cover">
             <div id="menu_button">
               <input type="checkbox" id="menu_checkbox">
@@ -53,33 +54,33 @@
         </div>
     </div>
 
-    <!-- mobile -->
-    <!-- 漢堡 -->
+    <!-- mobile展開區域 -->
     
-
-    <!-- <div class="mobile-topmenuWrap">
+    <div class="menu_body" id="menubody">
         <div class="mtw-logo">
-            <a href=""></a>
+            <a href="">
+                <img src="photo/b-logo/LOGO.png" alt="">
+            </a>
         </div>
         <ul class="mobile-topmenuList">
             <li>
                 <div class="en">
-                    <a href="PL.html">shop online</a>
+                    <a href="PL.html">shop online|線上購買</a>
                 </div>
             </li>
             <li>
                 <div class="en">
-                    <a href="Art.html">bean Art Present</a>
+                    <a href="Art.html">bean Art Present|線上探索豆間</a>
                 </div>
             </li>
             <li>
                 <div class="en">
-                    <a href="RM.html">bean Menu</a>
+                    <a href="RM.html">bean Menu|豆間菜單</a>
                 </div>
             </li>
             <li>
                 <div class="en">
-                    <a href="MP.html">where? bean</a>
+                    <a href="MP.html">where? bean|尋找豆間</a>
                 </div>
             </li>
         </ul>
@@ -106,7 +107,7 @@
                 </a>
             </li>
         </ul>
-    </div> -->
+    </div>
 
 
     <!--------- Main-content --------->
@@ -318,7 +319,22 @@
 
     
 
-
+    <!-- 收排套件 -->
+    <script src="/path/to/cdn/jquery.min.js"></script><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // 收排套件
+        $(document).ready(function () {
+          var display_width = $(window).width();
+          var hamburger = $("#menu_checkbox");
+          var menu = $("#menubody");
+      
+          $(hamburger).click(function (e) {
+            menu.toggleClass("open");
+            hamburger.toggleClass("open");
+          });
+      
+        })
+    </script>
 </body>
 
 

@@ -155,6 +155,11 @@
     #webapp_cover{
         display: none;
     }
+
+    /* 藏住內頁 */
+    .menu_body{
+        display: none;
+    }
 }
 
 
@@ -164,7 +169,6 @@
     .desktop-topmenuWrap{
         width: 100%;
         top: 25px;
-        z-index: 49;
         position: fixed;
         padding: 0 20px;
         display: inline-block;
@@ -343,6 +347,91 @@
           transform: rotateZ(0);
         }
     }
+    
+
+
+    /* 展開區域 */
+    .menu_body {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 70%;
+        height: 100vh;
+       
+        transform: translateX(-100%);
+        transition: 0.5s all ease; 
+        padding: 49px 20px;
+        background-image: linear-gradient(305deg, 
+        hsl(356.714,59%,76%),
+        #FFF);
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        animation: moveGradient 4s alternate infinite;
+        z-index: 99;
+        }
+    
+        @keyframes moveGradient {
+            50% {
+            background-position: 100% 50%;
+            }
+        }
+    
+        .menu_body.open {
+            transform: translateX(0); 
+        }
+
+    .mtw-logo{
+        margin-bottom: 30px;
+    }
+    .mtw-logo a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .mtw-logo img{
+        width: 60px;
+    }
+
+    .mobile-topmenuList {
+        list-style: none;
+        padding: 0px;
+    }
+
+    .mobile-topmenuList li{
+        margin-bottom:35px;
+    }
+
+
+    .mobile-topmenuList a{
+        font: 13px/1 "Bree Serif", serif;
+        letter-spacing: 1px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .mobile-linkList{
+        list-style: none;
+        margin: 40px 0px;
+        padding: 0px;
+    }
+
+    .mobile-linkList li{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 9px;
+    }
+
+    .mobile-linkList a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .mobile-linkList img{
+        width: 30px;
+    }
+
     
 
 
