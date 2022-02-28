@@ -129,89 +129,69 @@
         margin-bottom: 20px;
     }
     
-    .fast-buy-num-blk{
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        
-    }
-    
-    .btn-decrease{
-        display: block;
-        font-size: 0;
-        background: #D9ADA0;
-        border: 2px solid #D9ADA0;
-        position: relative;
-        width: 40px;
-        height: 46px;
-        
-    }
-    
-    .btn-decrease:before{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 18px;
-        height: 3px;
-    }
-    
-    .ipt-txt{
-        min-width: 0;
-        height: 40px;
+    /* 加減工具 */
+    form {
+        width: 100%;
+        margin: 0 auto;
         text-align: center;
-        color: #333;
+        padding-top: 50px;
+    }
+      
+    .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    
+    .value-button:hover {
+    cursor: pointer;
+    }
+    
+    form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+    background: #D9ADA0;
+    border: 2px solid #D9ADA0;
+    }
+    
+    form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    background: #D9ADA0;
+    border: 2px solid #D9ADA0;
+    }
+    
+    form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 222px;
+    height: 40px;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
         -webkit-appearance: none;
-        -moz-appearance: textfield;
-        border: 2px solid #D9ADA0;
-        border-width: 2px 0;
         margin: 0;
-        border-radius: 0;
-        -webkit-flex: 1 1 40px;
-        flex: 1 1 40px;
-        font-size: 1em;
-        line-height: 1.5em;
-    }
-    
-    .btn-increase{
-        display: block;
-        font-size: 0;
-        background: #D9ADA0;
-        border: 2px solid #D9ADA0;
-        position: relative;
-        width: 40px;
-        height: 46px;
-    }
-    
-    .btn-increase:before{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 18px;
-        height: 3px;
-        
-    }
-    
-    .btn-increase:after{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 3px;
-        height: 18px;
     }
     
     
@@ -448,89 +428,67 @@
         margin-bottom: 10px;
     }
     
-    .fast-buy-num-blk{
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        
+    /* 加減工具 */
+    form {
+        width: 100%;
+        padding-top: 50px;
+    }
+      
+    .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     }
     
-    .btn-decrease{
-        display: block;
-        font-size: 0;
-        background: #D9ADA0;
-        border: 2px solid #D9ADA0;
-        position: relative;
-        width: 40px;
-        height: 46px;
-        
+    .value-button:hover {
+    cursor: pointer;
     }
     
-    .btn-decrease:before{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 18px;
-        height: 3px;
+    form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+    background: #D9ADA0;
+    border: 2px solid #D9ADA0;
     }
     
-    .ipt-txt{
-        min-width: 0;
-        height: 40px;
-        text-align: center;
-        color: #333;
+    form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    background: #D9ADA0;
+    border: 2px solid #D9ADA0;
+    }
+    
+    form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 150px;
+    height: 40px;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
         -webkit-appearance: none;
-        -moz-appearance: textfield;
-        border: 2px solid #D9ADA0;
-        border-width: 2px 0;
         margin: 0;
-        border-radius: 0;
-        -webkit-flex: 1 1 40px;
-        flex: 1 1 40px;
-        font-size: 1em;
-        line-height: 1.5em;
-    }
-    
-    .btn-increase{
-        display: block;
-        font-size: 0;
-        background: #D9ADA0;
-        border: 2px solid #D9ADA0;
-        position: relative;
-        width: 40px;
-        height: 46px;
-    }
-    
-    .btn-increase:before{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 18px;
-        height: 3px;
-        
-    }
-    
-    .btn-increase:after{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 3px;
-        height: 18px;
     }
     
     
@@ -573,7 +531,7 @@
         width: 114px;
         height: 40px;
         padding: 0 12px;
-        margin-left: 33px;
+        margin-left: 14px;
         color: #fff;
         background: #d9ada091;
         position: relative;
@@ -767,89 +725,67 @@
         margin-bottom: 10px;
     }
     
-    .fast-buy-num-blk{
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        
+    /* 加減工具 */
+    form {
+        width: 100%;
+        padding-top: 50px;
+    }
+      
+    .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     }
     
-    .btn-decrease{
-        display: block;
-        font-size: 0;
-        background: #D9ADA0;
-        border: 14px solid #D9ADA0;
-        position: relative;
-        width: 40px;
-        height: 46px;
-        
+    .value-button:hover {
+    cursor: pointer;
     }
     
-    .btn-decrease:before{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 18px;
-        height: 3px;
+    form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+    background: #D9ADA0;
+    border: 2px solid #D9ADA0;
     }
     
-    .ipt-txt{
-        min-width: 0;
-        height: 40px;
-        text-align: center;
-        color: #333;
+    form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    background: #D9ADA0;
+    border: 2px solid #D9ADA0;
+    }
+    
+    form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+    }
+    
+    input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 150px;
+    height: 40px;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
         -webkit-appearance: none;
-        -moz-appearance: textfield;
-        border: 2px solid #D9ADA0;
-        border-width: 2px 0;
         margin: 0;
-        border-radius: 0;
-        -webkit-flex: 1 1 40px;
-        flex: 1 1 40px;
-        font-size: 1em;
-        line-height: 1.5em;
-    }
-    
-    .btn-increase{
-        display: block;
-        font-size: 0;
-        background: #D9ADA0;
-        border: 14px solid #D9ADA0;
-        position: relative;
-        width: 40px;
-        height: 46px;
-    }
-    
-    .btn-increase:before{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 18px;
-        height: 3px;
-        
-    }
-    
-    .btn-increase:after{
-        display: block;
-        content: '';
-        background: #000;
-        border-radius: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 3px;
-        height: 18px;
     }
     
     
@@ -893,7 +829,7 @@
         width: 114px;
         height: 40px;
         padding: 0 12px;
-        margin-left: 33px;
+        margin-left: 14px;
         color: #fff;
         background: #d9ada091;
         position: relative;

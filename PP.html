@@ -176,16 +176,11 @@
                         超商條碼 超商代碼
                     </p>
 
-                    <div class="fast-buy-num-blk">
-                        <button class="btn-decrease" title="減少">
-                            ::before
-                        </button>
-                        <input  class="ipt-txt" type="text" value="1">
-                        <button class="btn-increase" title="增加">
-                            ::before
-                            ::after
-                        </button>
-                    </div>
+                    <form>
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                      </form>
 
                     <div class="buy-button">
                         <button class="btn-fast-buy" title="直接購買" >
@@ -345,6 +340,22 @@
           });
       
         })
+
+    //加減工具
+    function increaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
+
+    function decreaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? value = 1 : '';
+        value--;
+        document.getElementById('number').value = value;
+    }
     </script>
 
 </body>
