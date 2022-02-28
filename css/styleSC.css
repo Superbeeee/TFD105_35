@@ -479,6 +479,7 @@
     
     .countWrap-hide-for-large img{
         width: 9px;
+        padding: 4px;
     }
 
     .countWrap-hide-for-large .value-button{
