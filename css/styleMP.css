@@ -57,8 +57,6 @@
     .info-content{
         width:350px;
         margin: 60px auto;
-        color: #fff;
-        text-decoration:none;
         font-size: 18px;
         font-family: "微軟正黑體";
         text-align: center;
@@ -68,7 +66,6 @@
     .info-content p{
         transition: all .5s;
         color: #fff;
-        text-decoration:none;
         background-color: #A49379;
 
         position: relative;
@@ -234,8 +231,6 @@
     .info-content{
         width: 100%;
         margin: 60px auto;
-        color: #fff;
-        text-decoration:none;
         font-size: 16px;
         font-family: "微軟正黑體";
         text-align: center;
@@ -247,7 +242,6 @@
         transition: all .5s;
         color: #fff;
         
-        text-decoration:none;
         background-color: #A49379;
         
         position: relative;
