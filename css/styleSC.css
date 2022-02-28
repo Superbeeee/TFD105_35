@@ -127,7 +127,7 @@
     .countWrap{
         height: 15px;
         font: 14px/1 "Bree Serif", serif;
-        
+        display: flex;
         color: #333;
         border: 1px solid #4d4d4d;
         transform: translateY(260%);
@@ -142,25 +142,31 @@
         width: 9px;
     }
 
-    .countWrap .minor{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
+    .countWrap .value-button{
         cursor: pointer;
-        transition: all 0.3s;
-        padding: 6px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
-    .countWrap .add{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-        left: auto;
-        cursor: pointer;
-        transition: all 0.3s;
-        padding: 6px;
+    #input-wrap {
+       
+    }
+        
+    input#number {
+    width: 62px;
+    text-align: center;
+    border: none;
+    background-color: inherit;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 
     
@@ -458,7 +464,8 @@
     .countWrap-hide-for-large{
         height: 15px;
         font: 14px/1 "Bree Serif", serif;
-        
+
+        display: flex;
         color: #333;
         border: 1px solid #4d4d4d;
         position: relative;
@@ -467,34 +474,39 @@
         padding: 3px 0;
         text-align: center;
         width: 85px;
-        /* margin-left: 185px; */
+    
     }
     
     .countWrap-hide-for-large img{
         width: 9px;
     }
 
-    .countWrap-hide-for-large .minor{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
+    .countWrap-hide-for-large .value-button{
         cursor: pointer;
-        transition: all 0.3s;
-        padding: 6px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
-    .countWrap-hide-for-large .add{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-        left: auto;
-        cursor: pointer;
-        transition: all 0.3s;
-        padding: 6px;
+    #input-wrap {
+       
     }
-
+        
+    input#number {
+    width: 62px;
+    text-align: center;
+    border: none;
+    background-color: inherit;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
 
 

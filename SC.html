@@ -144,25 +144,30 @@
 
                         <div class="pName">
                             <div class="ch">| 豆之間 | 國產豆漿 | 冷凍寄送 |</div>
+                    
                             <div class="countWrap-hide-for-large">
-                                <span class="minor">
+                                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">
                                     <img src="photo/left.png" alt="">
-                                </span>
-                                <span class="num">1</span>
-                                <span class="add">
+                                </div>
+                                <input type="number" id="number" value="0" />
+                                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">
                                     <img src="photo/right.png" alt="">
-                                </span>
+                                </div>
                             </div>
+                            
+
                         </div>
 
+                    
+
                         <div class="countWrap">
-                            <span class="minor">
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">
                                 <img src="photo/left.png" alt="">
-                            </span>
-                            <span class="num">1</span>
-                            <span class="add">
+                            </div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">
                                 <img src="photo/right.png" alt="">
-                            </span>
+                            </div>
                         </div>
 
                         <div class="price">
@@ -321,7 +326,7 @@
                 <p>
                 本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。
                 
-                參考資源:豆之間、池上農會、葉海地老師作品、部落客不羈、龜記、.but。
+                參考資源:豆之間、池上鄉農會、葉海地老師作品、部落客不羈、龜記、.but。
                 </p>
             </div>
             
@@ -345,6 +350,22 @@
           });
       
         })
+
+        //加減工具
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+        }
     </script>
 
 </body>
