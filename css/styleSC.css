@@ -247,11 +247,14 @@
         top: 0;
         left: 15px;
         text-align: left;
-        padding-left: 12px;
     }
 
     .remark li{
-        list-style-image:url('/photo of SC/title-party-icon.png');
+        background:url("/photo of SC/title-party-icon.png") no-repeat;
+    }
+
+    .remark p{
+        padding-left: 25px;
     }
     
     .bw-container{
@@ -607,12 +610,16 @@
         border-bottom: 1px solid #000;
         margin-bottom: 17px;
         padding-bottom: 16px;
-        padding-left: 35px;
         
     }
     
     .remark li{
-        list-style-image:url('/photo of SC/title-party-icon.png');
+        /* list-style-image:url('/photo of SC/title-party-icon.png'); */
+        background:url("/photo of SC/title-party-icon.png") no-repeat;
+    }
+
+    .remark p{
+        padding-left: 25px;
     }
 
 
