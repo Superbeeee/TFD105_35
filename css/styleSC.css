@@ -206,6 +206,7 @@
     
     .shipping-method-select{
         width: 25%;
+        display: flex;
     }
     
     .input{
@@ -553,6 +554,7 @@
     
     .shipping-method-select{
         width: 25%;
+        display: flex;
     }
     
     .input{

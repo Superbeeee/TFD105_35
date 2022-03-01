@@ -397,6 +397,9 @@
         letter-spacing: 1px;
         color: #000;
         text-decoration: none;
+        line-height: 40px;
+        display: block;
+        height: 40px;
     }
 
     .mobile-linkList{
