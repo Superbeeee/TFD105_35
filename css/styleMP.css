@@ -278,13 +278,13 @@
         }
     }
     
-    .info-content p:hover{
+    /* .info-content p:hover{
         z-index: 1;
     
         transform: scale(1.2);
         box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
         color: #fff;
-    }
+    } */
     
     .trans{
         width: 100%;
@@ -331,12 +331,13 @@
 
     }
     
-    .trans-content p:hover{
+    /* .trans-content p:hover{
         z-index: 1;
     
         transform: scale(1.2);
         box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
-    }
+    } */
+
 }
 
 

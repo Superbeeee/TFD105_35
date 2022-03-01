@@ -356,17 +356,7 @@
         transform: translateX(-100%);
         transition: 0.5s all ease; 
         padding: 49px 20px;
-        background-image: linear-gradient(305deg, 
-        hsl(151,59%,76%),
-        hsl(202.429,59%,76%),
-        hsl(253.857,59%,76%),
-        hsl(305.286,59%,76%),
-        hsl(356.714,59%,76%),
-        hsl(48.143,59%,76%),
-        hsl(99.571,59%,76%));
-        background-size: 300% 300%;
-        background-position: 0 50%;
-        animation: moveGradient 4s alternate infinite; 
+        background-color: #fff;
         z-index: 99;
         }
     
@@ -405,7 +395,7 @@
     .mobile-topmenuList a{
         font: 13px/1 "Bree Serif", serif;
         letter-spacing: 1px;
-        color: #FFF;
+        color: #000;
         text-decoration: none;
     }
 
