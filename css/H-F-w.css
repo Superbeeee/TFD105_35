@@ -369,20 +369,14 @@
        
         transform: translateX(-100%);
         transition: 0.5s all ease; 
-        
-        /* background-color: #fff; */
         z-index: 99;
         }
     
-        @keyframes moveGradient {
-            50% {
-            background-position: 100% 50%;
-            }
-        }
     
-        .menu_body.open {
-            transform: translateX(0); 
-        }
+    
+    .menu_body.open {
+        transform: translateX(0); 
+    }
 
     .mtw-logo{
         margin-bottom: 30px;
@@ -446,7 +440,7 @@
         width: 30%;
         
         height: 100vh;
-        background-color: #0000000f;
+        /* background-color: #0000000f; */
         z-index: 90;
     }
 
