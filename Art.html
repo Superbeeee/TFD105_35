@@ -52,62 +52,64 @@
               </label>
             </div>
         </div>
-    </div>
 
-    <!-- mobile展開區域 -->
+        <!-- mobile展開區域 -->
     
-    <div class="menu_body" id="menubody">
-        <div class="mtw-logo">
-            <a href="index.html">
-                <img src="photo/w-logo/W-LOGO.png" alt="">
-            </a>
-        </div>
-        <ul class="mobile-topmenuList">
-            <li>
-                <div class="en">
-                    <a href="PL.html">shop online|線上購買</a>
-                </div>
-            </li>
-            <li>
-                <div class="en">
-                    <a href="Art.html">bean Art Present|線上探索豆間</a>
-                </div>
-            </li>
-            <li>
-                <div class="en">
-                    <a href="RM.html">bean Menu|豆間菜單</a>
-                </div>
-            </li>
-            <li>
-                <div class="en">
-                    <a href="MP.html">where? bean|尋找豆間</a>
-                </div>
-            </li>
-        </ul>
+        <div class="menu_body" id="menubody">
+            <div class="mtw-logo">
+                <a href="index.html">
+                    <img src="photo/w-logo/W-LOGO.png" alt="">
+                </a>
+            </div>
+            <ul class="mobile-topmenuList">
+                <li>
+                    <div class="en">
+                        <a href="PL.html">shop online|線上購買</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="en">
+                        <a href="Art.html">bean Art Present|線上探索豆間</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="en">
+                        <a href="RM.html">bean Menu|豆間菜單</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="en">
+                        <a href="MP.html">where? bean|尋找豆間</a>
+                    </div>
+                </li>
+            </ul>
 
-        <ul class="mobile-linkList">
-            <li class="lw-fb">
-                <a href="#" target="_blank">
-                    <img src="photo/w-logo/w-fb.svg" alt="#">
-                </a>
-            </li>
-            <li class="lw-ig">
-                <a href="#" target="_blank">
-                    <img src="photo/w-logo/w-ig.svg" alt="#">
-                </a>
-            </li>
-            <li class="lw-ask">
-                <a href="AK.html">
-                    <img src="photo/w-logo/w-ask-logo.png" alt="#">
-                </a>
-            </li>
-            <li class="lw-bag">
-                <a href="SC.html">
-                    <img src="photo/w-logo/w-cart.svg" alt="#">
-                </a>
-            </li>
-        </ul>
+            <ul class="mobile-linkList">
+                <li class="lw-fb">
+                    <a href="#" target="_blank">
+                        <img src="photo/w-logo/w-fb.svg" alt="#">
+                    </a>
+                </li>
+                <li class="lw-ig">
+                    <a href="#" target="_blank">
+                        <img src="photo/w-logo/w-ig.svg" alt="#">
+                    </a>
+                </li>
+                <li class="lw-ask">
+                    <a href="AK.html">
+                        <img src="photo/w-logo/w-ask-logo.png" alt="#">
+                    </a>
+                </li>
+                <li class="lw-bag">
+                    <a href="SC.html">
+                        <img src="photo/w-logo/w-cart.svg" alt="#">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    
 
 
     <!--------- Main-content --------->
@@ -434,13 +436,13 @@
             
     </div>
 
-    <!-- 收排 -->
+    <!-- 漢堡收排 -->
     <script src="/path/to/cdn/jquery.min.js"></script><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- 上滑 -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
     <script>
-        // 收排
+        // 漢堡收排
         $(document).ready(function () {
           var display_width = $(window).width();
           var hamburger = $("#menu_checkbox");
@@ -482,6 +484,24 @@
         });
 
         backToTopButton.addEventListener("click", goToTop);
+
+
+        //haeder收排
+        $(function(){
+            var shrinkHeader = 300;
+            $(window).scroll(function() {
+                var scroll = getCurrentScroll();
+                if ( scroll >= shrinkHeader ) {
+                    $('.desktop-topmenuWrap').addClass('shrink');
+                }
+                    else {
+                        $('.desktop-topmenuWrap').removeClass('shrink');
+                }
+            });
+        function getCurrentScroll() {
+            return window.pageYOffset;
+            }
+        });
     </script>
     
 </body>
