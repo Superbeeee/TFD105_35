@@ -1,4 +1,10 @@
-
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 /* ---------Header---------- */
 @media (min-width: 1025px){
@@ -165,7 +171,8 @@
         padding: 0 20px;
         display: inline-block;
         transition: all 0.3s linear;
-        z-index: 90;
+        /* z-index: 10; */
+       
         /* display: none; */
     }
 
@@ -173,6 +180,8 @@
     /* LOGO */
     .BLOGO{
         margin-top: 0;
+        /* z-index: 49; */
+
     }
 
     .BLOGO img{
@@ -223,6 +232,8 @@
         /* width: 39px; */
         margin: 0 auto;
         transform: translateY(-50%) scale(2);
+
+        z-index: 200 !important;
     }
       
     #menu_button {
@@ -344,26 +355,35 @@
 
 
     /* 展開區域 */
+    .menu-content{
+        width: 70%;
+        height: 100vh;
+        background-color: #fff;
+        padding: 49px 20px;
+       
+
+    }
+
     .menu_body {
         position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
-        width: 70%;
+        width: 100%;
         height: 100vh;
        
         transform: translateX(-100%);
         transition: 0.5s all ease; 
-        padding: 49px 20px;
-        background-color: #fff;
-        z-index: 99;
+
+        /* z-index: 10; */
+        
         }
     
     
     
-        .menu_body.open {
-            transform: translateX(0); 
-        }
+    .menu_body.open {
+        transform: translateX(0); 
+    }
 
     .mtw-logo{
         margin-bottom: 30px;
@@ -418,7 +438,18 @@
     .mobile-linkList img{
         width: 30px;
     }
-    
+
+    .mask{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 30%;
+        
+        height: 100vh;
+        background-color: #0000000f;
+        z-index: 15;
+    }
 
     
 
