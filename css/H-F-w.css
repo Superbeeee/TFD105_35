@@ -432,7 +432,7 @@
         width: 30px;
     }
 
-    .mask{
+    /* .mask{
         position: fixed;
         top: 0;
         right: 0;
@@ -440,9 +440,9 @@
         width: 30%;
         
         height: 100vh;
-        /* background-color: #0000000f; */
+        background-color: #0000000f;
         z-index: 90;
-    }
+    } */
 
 }
 

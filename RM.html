@@ -521,27 +521,27 @@
                     
                 }
             }
-            }
+        }
             const i18n = new VueI18n({
-            //定義默認語言
-            locale: 'tw', 
-            messages
-            })
+                //定義默認語言
+                locale: 'tw', 
+                messages
+                })
 
-            var vm = new Vue({
-            el:"#app",
-            i18n,
-            data:{
-                mag:"改寫上傳選單 custom-file 語言",
-                lan:''
-            },
-            mounted(){
-                this.i18n.locale = 'jp'
-                // this.lan = this.$i18n.messages
-                console.log(this.i18n.locale)
-            }
+                var vm = new Vue({
+                el:"#app",
+                i18n,
+                data:{
+                    mag:"改寫上傳選單 custom-file 語言",
+                    lan:''
+                },
+                mounted(){
+                    this.i18n.locale = 'jp'
+                    // this.lan = this.$i18n.messages
+                    console.log(this.i18n.locale)
+                }
         
-        })
+            })
 
         //輪播
         $(function(){
