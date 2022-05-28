@@ -45,70 +45,73 @@
             </a></li>
         </ul>
         
-        <!-- 漢堡 -->
-        <div id="webapp_cover">
-            <div id="menu_button">
-              <input type="checkbox" id="menu_checkbox">
-              <label for="menu_checkbox" id="menu_label">
-                <div id="menu_text_bar"></div>
-              </label>
-            </div>
-        </div>
+        
     </div>
 
+    <!-- 漢堡 -->
+    <div id="webapp_cover">
+        <div id="menu_button">
+          <input type="checkbox" id="menu_checkbox">
+          <label for="menu_checkbox" id="menu_label">
+            <div id="menu_text_bar"></div>
+          </label>
+        </div>
+    </div>
     <!-- mobile展開區域 -->
     
     <div class="menu_body" id="menubody">
-        <div class="mtw-logo">
-            <a href="index.html">
-                <img src="photo/b-logo/LOGO.png" alt="">
-            </a>
-        </div>
-        <ul class="mobile-topmenuList">
-            <li>
-                <div class="en">
-                    <a href="PL.html">shop online|線上購買</a>
-                </div>
-            </li>
-            <li>
-                <div class="en">
-                    <a href="Art.html">bean Art Present|線上探索豆間</a>
-                </div>
-            </li>
-            <li>
-                <div class="en">
-                    <a href="RM.html">bean Menu|豆間菜單</a>
-                </div>
-            </li>
-            <li>
-                <div class="en">
-                    <a href="MP.html">where? bean|尋找豆間</a>
-                </div>
-            </li>
-        </ul>
+        <div class="menu-content">
+            <div class="mtw-logo">
+                <a href="index.html">
+                    <img src="photo/b-logo/LOGO.png" alt="">
+                </a>
+            </div>
+            <ul class="mobile-topmenuList">
+                <li>
+                    <div class="en">
+                        <a href="PL.html">shop online|線上購買</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="en">
+                        <a href="Art.html">bean Art Present|線上探索豆間</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="en">
+                        <a href="RM.html">bean Menu|豆間菜單</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="en">
+                        <a href="MP.html">where? bean|尋找豆間</a>
+                    </div>
+                </li>
+            </ul>
 
-        <ul class="mobile-linkList">
-            <li class="lw-fb">
-                <a href="#" target="_blank">
-                    <img src="photo/p-logo/p-fb.svg" alt="#">
-                </a>
-            </li>
-            <li class="lw-ig">
-                <a href="#" target="_blank">
-                    <img src="photo/p-logo/p-ig.svg" alt="#">
-                </a>
-            </li>
-            <li class="lw-ask">
-                <a href="AK.html">
-                    <img src="photo/p-logo/p-ask.svg" alt="#">
-                </a>
-            </li>
-            <li class="lw-bag">
-                <a href="SC.html">
-                    <img src="photo/p-logo/p-cart.svg" alt="#">
-                </a>
-            </li>
-        </ul>
+            <ul class="mobile-linkList">
+                <li class="lw-fb">
+                    <a href="#" target="_blank">
+                        <img src="photo/p-logo/p-fb.svg" alt="#">
+                    </a>
+                </li>
+                <li class="lw-ig">
+                    <a href="#" target="_blank">
+                        <img src="photo/p-logo/p-ig.svg" alt="#">
+                    </a>
+                </li>
+                <li class="lw-ask">
+                    <a href="AK.html">
+                        <img src="photo/p-logo/p-ask.svg" alt="#">
+                    </a>
+                </li>
+                <li class="lw-bag">
+                    <a href="SC.html">
+                        <img src="photo/p-logo/p-cart.svg" alt="#">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
@@ -413,15 +416,20 @@
     </div>
 
     <!-- 收排 -->
-    <script src="/path/to/cdn/jquery.min.js"></script><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- 上滑 -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- 語言切換CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-i18n/8.4.0/vue-i18n.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-i18n/8.4.0/vue-i18n.min.js"></script> -->
+    <script src="./JS/vue-i18n.min.js"></script>
+    <script src="./JS/vue_2.5.17.min.js"></script>
     <!-- 輪播CDN -->
-    <script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
-    <script src="//cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+    <!-- <script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script> -->
+    <!-- <script src="//cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script> -->
+    <script src="./JS/jquery_2.2.2.min.js"></script>
+    <script src="./JS/lexslider_2.6.3.min.js"></script>
     <script>
         // 收排
         $(document).ready(function () {
